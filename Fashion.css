@@ -328,4 +328,20 @@ li a:hover{
     
    
  }
+.sector1{
+    text-align: center;
+    margin-bottom: 2%;
+    color: blue;
+}
+#m-foto{
+    width: 70vw;
+    height:60vh;
+    margin-left: 15%;
+}
+
+#m-foto2{
+    width: 20vw;
+    height:30vh;
+    margin-top: 5%;
+}
     
