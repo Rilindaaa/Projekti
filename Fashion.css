@@ -404,3 +404,57 @@ li a:hover{
   font-family: 'Courier New', Courier, monospace;
   color:black;
 }
+
+#k-foto{
+    width: 100vw;
+    height:80vh; 
+    margin-top: 1%;
+}
+
+.sector2>h1{
+    text-align: center;
+    margin-bottom: 2%;
+    color:rgb(177, 25, 25);
+}
+
+
+.kids {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    left: 2%;
+    flex-direction: row;
+}
+
+.k-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.k-box p {
+    margin-left: 20%;
+    font-family: sans-serif;
+    
+}
+
+.k-box img {
+    width: 15vw;
+    height: 30vh;
+    left: 35%;
+    position: relative;
+    
+   
+
+}
+
+#bxo .k-box{
+    text-align-last:center;
+    width:50%;
+    padding:10px;
+    margin-left: 20px;
+    
+}
