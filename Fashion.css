@@ -516,6 +516,7 @@ li a:hover{
   width: 20%;
   background: hotpink;
   color: white;
+  border: 0px;
 }
 
 #account{
@@ -563,4 +564,10 @@ li a:hover{
   width: 20%;
   background: hotpink;
   color: white;
+  border:0px;
+}
+
+.error{
+    color: red;
+    font-size: 10px;
 }

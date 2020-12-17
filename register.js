@@ -1,11 +1,12 @@
-
-document.getElementById('login').addEventListener('click', function(event){
-    usernameValidations(event);
-    passwordValidations(event);
+document.getElementById('register').addEventListener('click', function(event){
+    formValidations(event); 
 })
 
-function usernameValidations(event) {
-    username = document.getElementsByClassName('username')[0].value;
+function formValidations(event) {
+    password = document.getElementsByClassName('regpassword')[0].value;
+    confirmpassword = document.getElementsByClassName('regconfirmpassword')[0].value;
+    username = document.getElementsByClassName('regusername')[0].value;
+    email = document.getElementsByClassName('regemail')[0].value;
     if (username.length == 0) {
         alert("Username duhet te mbushet!");
         event.preventDefault();
@@ -21,12 +22,8 @@ function usernameValidations(event) {
         event.preventDefault();
         return false;
     }
-}
-
-function passwordValidations(event) {
-    password = document.getElementsByClassName('password')[0].value;
-    
-    if (password.length == 0) {
+    else if (password.length == 0) {
+        
         alert("Password duhet te mbushet!");
         event.preventDefault();
         return false;
@@ -41,8 +38,20 @@ function passwordValidations(event) {
         event.preventDefault();
         return false;
     }
+    else if (password !== confirmpassword){
+        alert("Passwodat nuk perputhen!");
+        event.preventDefault();
+        return false;
+    }
+    else if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)){
+        alert("Emaili eshte invalid");
+        event.preventDefault();
+        return false;    
+    }
+    else{
+        alert("Jeni regjistruar me sukses!");
+    }
 }
-
 function hasNumber(password) {
     return /\d/.test(password);
   }
