@@ -6,38 +6,38 @@ function formValidations(event) {
     password = document.getElementsByClassName('password')[0].value;
     username = document.getElementsByClassName('username')[0].value;
     if (username.length == 0) {
-        alert("Username duhet te mbushet!");
+        alert("Username can't be empty!");
         event.preventDefault();
         return false;
     }
     else if(username.length < 6) {
-        alert("Username duhet te jete me i gjate se 5 karaktere!");
+        alert("Username must be longer than 5 characters!");
         event.preventDefault();
         return false;
     }
     else if(username[0] !== username[0].toUpperCase()){
-        alert("Shkronja e pare duhet te jete e madhe!");
+        alert("First character must be uppercase!");
         event.preventDefault();
         return false;
     }
     else if (password.length == 0) {
         
-        alert("Password duhet te mbushet!");
+        alert("Password can't be empty!");
         event.preventDefault();
         return false;
     } 
     else if (password.length < 8) {
-        alert("Password duhet te jete me i gjate se 7 karaktere!");
+        alert("Password must be longer than 8 characters!");
         event.preventDefault();
         return false;
     }
     else if (!hasNumber(password)) {
-        alert("Password duhet ta permabje se paku nje numer!");
+        alert("Password must have at least a number!");
         event.preventDefault();
         return false;
     }
     else{
-        alert("Jeni kycur me sukses!");
+        alert("Login successful!");
     }
 }
 function hasNumber(password) {
