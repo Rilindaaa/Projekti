@@ -3,28 +3,25 @@
     padding: 0;
 }
 
+ /*INDEX*/
 
 #content{
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
-
 
 #Logo ul li img{
     height: 100px;
     width: 200px;
     margin-top: 20%;
-
 }
 
 #Header{
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: 40px;
-    
+    min-height: 40px;   
 }
 
 #Logo ul{
@@ -45,8 +42,7 @@
     align-content: right;
     align-items: center ;
     justify-content: space-around;
-    margin-left: 50%;
-       
+    margin-left: 50%;       
 }
 
 #Elementet{
@@ -64,7 +60,6 @@
 
 li a {
    text-decoration: none;
-
 }
 
 li a:hover{
@@ -81,12 +76,10 @@ li a:hover{
     font-size: 16px;
 }
 
-
 #img{
     width: 100vw;
     height: 80vh;
 }
-
 .container h3{
     font-size: 50px;
     font-family: Edwardian Script ITC;
@@ -97,7 +90,6 @@ li a:hover{
     left: 62%;
     top: 70%;
 }
-
 .container h4{
     font-size: 60px;
     font-family: Edwardian Script ITC;
@@ -108,14 +100,12 @@ li a:hover{
     left: 1%;
     top: 30%;
 }
-
 .intro>h1 {
     margin-top: 2%;
     text-align: center;
     margin-bottom: 2%;
     color: rgba(204, 182, 109, 0.527);
 }
-
 .Permbajtja {
     display: flex;
     justify-content: space-between;
@@ -124,86 +114,178 @@ li a:hover{
     left: 10%;
     flex-direction: row;
 }
-
 .box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-
 .box>h4 {
     margin: 20px 0;
     margin-left: 40%;
     font-family: sans-serif;
     
 }
-
 .box p {
     font-weight: 100;
     margin-left: 35%;
     font-family: sans-serif;
    margin-bottom: 2%;
 }
-
 .box img {
     width: 15vw;
     height: 20vh;
     left: 35%;
-    position: relative;
-    
-
+    position: relative;  
 }
+ /*FOOTER*/
 
-
-
-.main{
-    width: 100vw;
-    height: 25vh;
-    background-color: hotpink;
+.single-footer{
+    width: 33%;
+    float: left;
+    text-align: center;
+    color: #fff;
 }
-
-.main h3{
-    margin-left: 15%;
-    font-size: 22px;
-    color: white;
-    position: absolute;
-    margin-top: 3%;
-    font-family: sans-serif;
-    
-}
-
-.about img{
-    width: 100vw;
-    height: 90vh;
-}
-
-.about p{
+.single-footer .fa{
+    padding: 1px;
     font-size: 20px;
-    font-family: monospace;
-    word-spacing: 10%;
-    text-align: right;
-    color:white;
+    text-decoration: none;
+    width: 20px;
+    text-align:center;
+    border-radius: 50%;
+}
+.single-footer ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+.single-footer ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.single-footer p{
+    width: 65;
+    font-size: 17px;
+}
+#f-color{
+   background-color:rgb(214, 202, 161);
+   width: content;
+   height: 20vh;
+}
+.wrapper .butoni{
+   height: 50px;
+   width: 50px;
+   float: right;
+   margin: 0 10px;  
+   margin-top: 10%;
+}
+#copy{
+   margin-top: 20%;
+   font-size: 20px;
+   margin-right: 18%;
+}
+.pm{
+   margin-top: 5%;
+   margin-right: 55%;
+   font-size: 17px;
+}
+.butoni{
+   margin-top: 5%;
+}
+
+/*ABOUT US*/
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;   
+ }
+.slideshow .Slides img{
+   max-width: 500vw;
+}
+  /* Hide the images by default */
+  .Slides {
+    display: none;
+}
+  
+  /* Next & previous buttons */
+  .mbrapa, .para {
+    cursor: pointer;
     position: absolute;
-    left: 60%;
-    top: 30%;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
-
-.offers img{
-    width: 100vw;
-    height: 100vh;
+  
+  /* Position the "next button" to the right */
+  .para {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .mbrapa:hover, .para:hover {
+    background-color: rgb(190, 35, 113);
+}
+  
+  /* Caption text */
 
+  /* Fading animation */
+  .hija {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+#bout p{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(230, 38, 86);
+    width: 50%;
+    margin-bottom: 2%;
+    margin-left: 1%;   
+}
+#bout #tx{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(230, 38, 86);
+    width: 50%;
+    margin-left: 49%;
+}
+#bout #tx1{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(230, 38, 86);
+    width: 50%;
+    margin-left: 1%;
+}
 
 /*WOMEN*/
 
 .sector>h1 {
-   
     text-align: center;
     margin-bottom: 2%;
     color: rgb(218, 110, 164);
 }
-
 .women {
     display: flex;
     justify-content: space-between;
@@ -212,48 +294,35 @@ li a:hover{
     left: 2%;
     flex-direction: row;
 }
-
 .w-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-
 .w-box p {
     margin-left: 20%;
-    font-family: sans-serif;
-    
+    font-family: sans-serif;  
 }
-
 .w-box img {
     width: 15vw;
     height: 30vh;
     left: 35%;
-    position: relative;
-    
-   
-
+    position: relative; 
 }
-
 #boxes .w-box{
     text-align-last:center;
     width:50%;
     padding:10px;
-    margin-left: 20px;
-    
+    margin-left: 20px;  
 }
-
 .p-stili{
     padding:15px;
     background-color: rgb(218, 110, 164);
     color:#ffffff;
     margin-top:30px;
-    margin-bottom:10px;
-
-    
-    }
- 
+    margin-bottom:10px;  
+ }
 #boxes .semore{
     background: rgba(219, 145, 213, 0.432);
     border-radius: 20px;
@@ -264,25 +333,20 @@ li a:hover{
     margin-left: 50%;
     color: white;
     border: 0px;
-    
-   
  }
+
+ /*MAN*/
 .sector1>h1{
     text-align: center;
     margin-bottom: 2%;
     color:black;
 }
- 
-
-
-
 #m-foto{
     width: 70vw;
     height:60vh;
     margin-left: 15%;
     margin-top: 3%;
 }
-
 .men {
     display: flex;
     justify-content: space-between;
@@ -291,7 +355,6 @@ li a:hover{
     left: 2%;
     flex-direction: row;
 }
-
 .m-box{
     display: flex;
     flex-direction: column;
@@ -303,7 +366,6 @@ li a:hover{
 .m-box p {
     margin-left: 20%;
     font-family: sans-serif;
-    
 }
 
 .m-box img {
@@ -311,17 +373,13 @@ li a:hover{
     height: 30vh;
     left: 35%;
     position: relative;
-    
-   
-
 }
 
 #bx .m-box{
     text-align-last:center;
     width:50%;
     padding:10px;
-    margin-left: 20px;
-    
+    margin-left: 20px; 
 }
 
 .Stili{
@@ -344,20 +402,17 @@ li a:hover{
   color:black;
 }
 
+/*KIDS*/
 #k-foto{
     width: 70vw;
     height:60vh; 
-    margin-left: 2%;
-    
+    margin-left: 2%;  
 }
-
 .sector2>h1{
     text-align: center;
     margin-bottom: 2%;
     color:rgb(219, 183, 106);
 }
-
-
 .kids {
     display: flex;
     justify-content: space-between;
@@ -366,7 +421,6 @@ li a:hover{
     left: 2%;
     flex-direction: row;
 }
-
 .k-box{
     display: flex;
     flex-direction: column;
@@ -374,16 +428,11 @@ li a:hover{
     text-align: center;
     margin-top: 1%;
 }
-
-
 .k-box img {
     width: 15vw;
     height: 30vh;
     left: 35%;
     position: relative;
-    
-   
-
 }
 
 #bxo .k-box{
@@ -391,15 +440,13 @@ li a:hover{
     width:50%;
     padding:10px;
     margin-left: 20px;
-    margin-bottom: 5%;
-    
+    margin-bottom: 5%;  
 }
 
 #k-txt{
     text-align: center;
     font-family: Edwardian Script ITC;
-    font-size: 20px;
-    
+    font-size: 20px; 
 }
 
 .k-color{
@@ -412,15 +459,13 @@ li a:hover{
     font-size: 20px;
 }
 
-
+/*LOGIN*/
 .cont{
   margin: auto;
   width: 30%;
   height: 20%;
   margin-bottom: 10%;
   margin-top: 5%;
-  
-  
 }
 
 .cont form{
@@ -448,7 +493,6 @@ li a:hover{
   padding: 0 10px;
   margin-top: 5%;
   border-radius: 15px;
-
 }
 
 .btn{
@@ -464,13 +508,13 @@ li a:hover{
   margin-top: 10%;
 }
 
+/*REGISTER*/
 .cont1{
   margin: auto;
   width: 30%;
   height: 20%;
   margin-bottom: 10%;
   margin-top: 5%;
-  
 }
 
 .cont1 form{
@@ -481,7 +525,6 @@ li a:hover{
   text-align: center;
   font-size: 15px;
   margin-left: 10%;
-
 }
 
 .cont1 form h1{
@@ -499,7 +542,6 @@ li a:hover{
   padding: 0 10px;
   margin-top: 1%;
   border-radius: 15px;
-
 }
 
 .bttn{
@@ -514,137 +556,5 @@ li a:hover{
     margin-top: 3%;
 }
 
- .single-footer{
-     width: 33%;
-     float: left;
-     text-align: center;
-     color: #fff;
- }
- .single-footer .fa{
-     padding: 1px;
-     font-size: 20px;
-     text-decoration: none;
-     width: 20px;
-     text-align:center;
-     border-radius: 50%;
- }
 
- .single-footer ul{
-     margin: 0;
-     padding:0;
-     list-style: none;
-}
 
- .single-footer ul a{
-     text-transform: uppercase;
-     text-decoration: none;
-     color: #fff;
-     font-size: 15px;
-}
-
- .single-footer p{
-     width: 65;
-     font-size: 17px;
-}
-
-#f-color{
-    background-color:rgb(214, 202, 161);
-    width: content;
-    height: 20vh;
-}
-
-.wrapper .butoni{
-    height: 50px;
-    width: 50px;
-    float: right;
-    margin: 0 10px;  
-    margin-top: 10%;
-
-}
-
-#fllw{
-    margin-left: 50%;
-}
-
-#copy{
-    margin-top: 20%;
-    font-size: 20px;
-    margin-right: 18%;
-}
-
-.pm{
-    margin-top: 5%;
-    margin-right: 55%;
-    font-size: 17px;
-}
-
-#cu{
-    margin-right: 53%;
-}
-
-.butoni{
-    margin-top: 5%;
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-   
-    
-  }
-
-.slideshow-container .mySlides img{
-   max-width: 500vw;
-}
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgb(190, 35, 113);
-  }
-  
-  /* Caption text */
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-#bout{
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(189, 33, 111);
-    border-width: 20px;
-    text-align: center;
-    
-}
