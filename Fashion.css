@@ -195,6 +195,49 @@ li a:hover{
    margin-top: 5%;
 }
 
+.fa-phone{
+    background: -webkit-radial-gradient(ellipse,  rgb(25, 115, 145) 75%, #ef1d49);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.fa-envelope{
+    background: -webkit-radial-gradient(33% 100% circle, red 30%, red 62%, #9b36b7 85%, white);
+    background: radial-gradient(circle at 33% 100%, red 30%,red 62%, #9b36b7 85%, white);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+.fa-instagram{
+    background: -webkit-radial-gradient(33% 100% circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.fa-twitter{
+    background: -webkit-radial-gradient(center,  #08bee2e1 35%, #273478);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.fa-facebook{
+    background: -webkit-radial-gradient(center, rgb(35, 35, 212) 20%, #0c27ad);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.fa-youtube{
+    background: -webkit-radial-gradient(center, red 20%, #0c27ad);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 /*ABOUT US*/
 
 .slideshow {
