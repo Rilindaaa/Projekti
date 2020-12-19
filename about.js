@@ -1,16 +1,11 @@
 var Index = 1;
 showSlides(Index);
-
-// Next/previous controls
 function plusSlides(n) {
   showSlides(Index += n);
 }
-
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(Index = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("Slides");
@@ -20,5 +15,4 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   slides[Index-1].style.display = "block";
-
 }

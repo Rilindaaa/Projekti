@@ -1,7 +1,6 @@
 document.getElementById('register').addEventListener('click', function(event){
     formValidations(event); 
 })
-
 function formValidations(event) {
     password = document.getElementsByClassName('regpassword')[0].value;
     confirmpassword = document.getElementsByClassName('regconfirmpassword')[0].value;
@@ -54,4 +53,4 @@ function formValidations(event) {
 }
 function hasNumber(password) {
     return /\d/.test(password);
-  }
+}

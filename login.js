@@ -1,7 +1,6 @@
 document.getElementById('login').addEventListener('click', function(event){
     formValidations(event); 
 })
-
 function formValidations(event) {
     password = document.getElementsByClassName('password')[0].value;
     username = document.getElementsByClassName('username')[0].value;
@@ -42,4 +41,4 @@ function formValidations(event) {
 }
 function hasNumber(password) {
     return /\d/.test(password);
-  }
+}

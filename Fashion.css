@@ -5,13 +5,7 @@
 
  /*INDEX*/
 
-#content{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;  
-}
-
-#Logo ul li img{
+ #Logo ul li img{
     height: 100px;
     width: 200px;
     margin-top: 20%;
@@ -21,14 +15,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    min-height: 40px;   
-}
-
-#Logo ul{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center ;
+   
 }
 
 #Logo ul li{
@@ -39,8 +26,7 @@
 #Elementet ul{
     display: flex;
     flex-direction: row;
-    align-content: right;
-    align-items: center ;
+    align-items: center;
     justify-content: space-around;
     margin-left: 50%;       
 }
@@ -59,11 +45,11 @@
 }
 
 li a {
-   text-decoration: none;
-}
+    text-decoration: none;
+ }
 
 li a:hover{
-     color: hotpink;
+    color: hotpink;
 }
 
 .login{
@@ -80,6 +66,7 @@ li a:hover{
     width: 100vw;
     height: 80vh;
 }
+
 .container h3{
     font-size: 50px;
     font-family: Edwardian Script ITC;
@@ -90,6 +77,7 @@ li a:hover{
     left: 62%;
     top: 70%;
 }
+
 .container h4{
     font-size: 60px;
     font-family: Edwardian Script ITC;
@@ -100,12 +88,14 @@ li a:hover{
     left: 1%;
     top: 30%;
 }
+
 .intro>h1 {
     margin-top: 2%;
     text-align: center;
     margin-bottom: 2%;
     color: rgba(204, 182, 109, 0.527);
 }
+
 .Permbajtja {
     display: flex;
     justify-content: space-between;
@@ -114,30 +104,35 @@ li a:hover{
     left: 10%;
     flex-direction: row;
 }
+
 .box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
+
 .box>h4 {
     margin: 20px 0;
     margin-left: 40%;
     font-family: sans-serif;
     
 }
+
 .box p {
     font-weight: 100;
     margin-left: 35%;
     font-family: sans-serif;
-   margin-bottom: 2%;
+    margin-bottom: 2%;
 }
+
 .box img {
     width: 15vw;
     height: 20vh;
     left: 35%;
     position: relative;  
 }
+
  /*FOOTER*/
 
 .single-footer{
@@ -146,6 +141,7 @@ li a:hover{
     text-align: center;
     color: #fff;
 }
+
 .single-footer .fa{
     padding: 1px;
     font-size: 20px;
@@ -154,26 +150,31 @@ li a:hover{
     text-align:center;
     border-radius: 50%;
 }
+
 .single-footer ul{
     margin: 0;
     padding:0;
     list-style: none;
 }
+
 .single-footer ul a{
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     font-size: 15px;
 }
+
 .single-footer p{
     width: 65;
     font-size: 17px;
 }
+
 #f-color{
    background-color:rgb(214, 202, 161);
    width: content;
    height: 20vh;
 }
+
 .wrapper .butoni{
    height: 50px;
    width: 50px;
@@ -181,16 +182,19 @@ li a:hover{
    margin: 0 10px;  
    margin-top: 10%;
 }
+
 #copy{
    margin-top: 20%;
    font-size: 20px;
    margin-right: 18%;
 }
+
 .pm{
    margin-top: 5%;
    margin-right: 55%;
    font-size: 17px;
 }
+
 .butoni{
    margin-top: 5%;
 }
@@ -199,7 +203,6 @@ li a:hover{
     background: -webkit-radial-gradient(ellipse,  rgb(25, 115, 145) 75%, #ef1d49);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .fa-envelope{
@@ -207,89 +210,66 @@ li a:hover{
     background: radial-gradient(circle at 33% 100%, red 30%,red 62%, #9b36b7 85%, white);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-
 }
+
 .fa-instagram{
     background: -webkit-radial-gradient(33% 100% circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
     background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .fa-twitter{
     background: -webkit-radial-gradient(center,  #08bee2e1 35%, #273478);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .fa-facebook{
     background: -webkit-radial-gradient(center, rgb(35, 35, 212) 20%, #0c27ad);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .fa-youtube{
     background: -webkit-radial-gradient(center, red 20%, #0c27ad);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-
 }
 
 /*ABOUT US*/
 
 .slideshow {
-    max-width: 1000px;
+    max-width: 800vw;
+
     position: relative;
     margin: auto;   
  }
-.slideshow .Slides img{
-   max-width: 500vw;
-}
-  /* Hide the images by default */
-  .Slides {
-    display: none;
-}
-  
-  /* Next & previous buttons */
-  .mbrapa, .para {
+
+ .slideshow .Slides img{
+    max-width: 500vw;
+ }
+
+.mbrapa, .para {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
+    margin-top: 5px;
     padding: 16px;
-    color: white;
+    color:black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
 }
   
-  /* Position the "next button" to the right */
-  .para {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.para {
+    right: 0; 
 }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .mbrapa:hover, .para:hover {
+.mbrapa:hover, .para:hover {
     background-color: rgb(190, 35, 113);
 }
-  
-  /* Caption text */
 
-  /* Fading animation */
-  .hija {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
 #bout p{
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
@@ -301,6 +281,7 @@ li a:hover{
     margin-bottom: 2%;
     margin-left: 1%;   
 }
+
 #bout #tx{
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
@@ -311,6 +292,7 @@ li a:hover{
     width: 50%;
     margin-left: 49%;
 }
+
 #bout #tx1{
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
@@ -329,6 +311,7 @@ li a:hover{
     margin-bottom: 2%;
     color: rgb(218, 110, 164);
 }
+
 .women {
     display: flex;
     justify-content: space-between;
@@ -337,59 +320,76 @@ li a:hover{
     left: 2%;
     flex-direction: row;
 }
+
 .w-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
+
 .w-box p {
     margin-left: 20%;
     font-family: sans-serif;  
 }
+
 .w-box img {
     width: 15vw;
     height: 30vh;
     left: 35%;
     position: relative; 
 }
+
 #boxes .w-box{
     text-align-last:center;
     width:50%;
     padding:10px;
     margin-left: 20px;  
 }
+
 .p-stili{
     padding:15px;
     background-color: rgb(218, 110, 164);
     color:#ffffff;
     margin-top:30px;
     margin-bottom:10px;  
- }
+}
+
 #boxes .semore{
-    background: rgba(219, 145, 213, 0.432);
+    background: rgb(238, 193, 142);
     border-radius: 20px;
-    justify-content: center;
-    font-size: 8px;
     width: 20%;
     padding: 10px;
     margin-left: 50%;
-    color: white;
     border: 0px;
- }
+}
 
- /*MAN*/
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+button a:hover{
+    color: hotpink;
+}
+
+/*MAN*/
+
 .sector1>h1{
     text-align: center;
     margin-bottom: 2%;
     color:black;
 }
+
 #m-foto{
     width: 70vw;
     height:60vh;
     margin-left: 15%;
     margin-top: 3%;
 }
+
 .men {
     display: flex;
     justify-content: space-between;
@@ -398,6 +398,7 @@ li a:hover{
     left: 2%;
     flex-direction: row;
 }
+
 .m-box{
     display: flex;
     flex-direction: column;
@@ -428,7 +429,7 @@ li a:hover{
 .Stili{
     padding:15px;
     background-color:black;
-    color:#ffffff;
+    color:white;
     margin-top:30px;
     margin-bottom:10px;
 }
@@ -446,16 +447,19 @@ li a:hover{
 }
 
 /*KIDS*/
+
 #k-foto{
     width: 70vw;
     height:60vh; 
     margin-left: 2%;  
 }
+
 .sector2>h1{
     text-align: center;
     margin-bottom: 2%;
     color:rgb(219, 183, 106);
 }
+
 .kids {
     display: flex;
     justify-content: space-between;
@@ -464,6 +468,7 @@ li a:hover{
     left: 2%;
     flex-direction: row;
 }
+
 .k-box{
     display: flex;
     flex-direction: column;
@@ -471,6 +476,7 @@ li a:hover{
     text-align: center;
     margin-top: 1%;
 }
+
 .k-box img {
     width: 15vw;
     height: 30vh;
@@ -503,23 +509,24 @@ li a:hover{
 }
 
 /*LOGIN*/
+
 .cont{
-  margin: auto;
-  width: 30%;
-  height: 20%;
-  margin-bottom: 10%;
-  margin-top: 5%;
-}
+    margin: auto;
+    width: 30%;
+    height: 20%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
 
 .cont form{
-  width: 60%;
-  height: 50vh;
-  padding: 20px;
-  background: rgba(235, 208, 208, 0.747);
-  text-align: center;
-  font-size: 15px;
-  margin-left: 15%;
-}
+    width: 60%;
+    height: 50vh;
+    padding: 20px;
+    background: rgba(235, 208, 208, 0.747);
+    text-align: center;
+    font-size: 15px;
+    margin-left: 15%;
+  }
 
 .cont form h1{
   text-align: center;
@@ -548,10 +555,11 @@ li a:hover{
 }
 
 #account{
-  margin-top: 10%;
-}
+    margin-top: 10%;
+  }
 
 /*REGISTER*/
+
 .cont1{
   margin: auto;
   width: 30%;
@@ -598,6 +606,3 @@ li a:hover{
 #rg{
     margin-top: 3%;
 }
-
-
-
