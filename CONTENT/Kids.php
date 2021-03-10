@@ -44,7 +44,6 @@
                     </div>
                 </div>
             </main>
-
             <div id ="bxo">
                 <div class='kids'>
                     <div class='k-box'>
