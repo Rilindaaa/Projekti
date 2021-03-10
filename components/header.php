@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,10 +26,10 @@
                                     <li><a href="kids.php">Kids</a></li>
                                     <?php
                                     if(isset($_SESSION['role'])&& $_SESSION['role']==1){
-                                        echo '<li><a class="login" href="logout.php">Log Out</a></li>';
+                                        echo '<li><a class="login" href="logout.php">Dashboard</a></li>';
                                     } 
                                     if(isset($_SESSION['role'])){
-                                        echo '<li><a class="login" href="logout.php">Log Out</a></li>';  
+                                        echo '<li><a class="login" href="../userLogic/logout.php">Log Out</a></li>';  
                                     }  
                                     if(!isset($_SESSION['role'])){
                                         echo '<li><a class="login" href="login.php">Log In</a></li>';  
@@ -37,4 +40,4 @@
                      </div> 
                  </div>                 
         </header>
-        <body>
+ <body>

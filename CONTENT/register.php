@@ -30,25 +30,25 @@
         </header>
         <main>
         	<div class ="cont1">
-                    <form action ="index.php">
+                    <form action ="../userLogic/loginVerify.php" method="POST">
                         <h1>Register</h1>
                             <div class ="form-group1">
                                 <label for ="">Username</label>
-                                <input type ="text" class ="form-control1 regusername" placeholder="username" >
+                                <input type ="text" name="username" class ="form-control1 regusername" placeholder="username" >
                             </div>
                             <div class ="form-group1">
                                 <label for ="">Password</label>
-                                <input type ="password" class ="form-control1 regpassword" placeholder="password">
+                                <input type ="password" name="password" class ="form-control1 regpassword" placeholder="password">
                             </div>
                             <div class ="form-group1">
                                 <label for ="">Confirm Password</label>
-                                <input type ="password" class ="form-control1 regconfirmpassword" placeholder="confirm password">
+                                <input type ="password" name="confirmpassword" class ="form-control1 regconfirmpassword" placeholder="confirm password">
                             </div>
                             <div class ="form-group1">
                                 <label for ="">Email</label><br>
-                                <input type ="email" class ="form-control1 regemail" placeholder="email">
+                                <input type ="email" name="email" class ="form-control1 regemail" placeholder="email">
                             </div>
-                            <input type="submit" class ="bttn" value="Register" id="register">
+                            <input type="submit" name="register-btn" class ="bttn" value="Register" id="register">
                             <p id ="rg">Already have an account? <a href ="login.php">Login</a></p>
                     </form>
                 </div>
