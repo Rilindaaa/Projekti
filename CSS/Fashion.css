@@ -420,8 +420,6 @@ button {
     color: white;
 }
 
-/* 
-
 
 /*MEN*/
 
@@ -548,7 +546,7 @@ button {
     justify-content: space-between;
     width: 90%;
     position: relative;
-    left: 2%;
+    left: 6%;
     flex-direction: row;
 }
 
@@ -577,28 +575,57 @@ button {
 
 #k-txt{
     text-align: center;
-    font-family: Edwardian Script ITC;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 80%;
+    background-color:rgb(219, 183, 106);
+    color: white;
+    margin-left: 12%;
 }
 
-.k-color{
-    background-color: rgb(190, 209, 221);
-}
-
-.foto-txt{
+.foto-txt {
     text-align: center;
-    font-family: Edwardian Script ITC;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.foto-txt p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    background-color:rgb(219, 183, 106) ;
+    color: white;
+    width: 55%;
+    margin-left: 23%;
 }
 
 .k-teksti{
     text-align: center;
-    font-family: Edwardian Script ITC;
-    font-size: 40px;
+    font-family: sans-serif;
+    font-size: 25px;
     margin-bottom: 10px;
+    background-color:rgb(219, 183, 106);
+    width: 40%;
+    color: white;
+    margin-left: 31%;
 }
 
+.shopK >h1 {
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    color:rgb(219, 183, 106);
+    margin-left: 3%;
+}
 
+.dressesK{
+    margin-bottom: 5px;
+    text-align: center;
+    width: 60%;
+    background-color:rgb(219, 183, 106);
+    margin-left: 20%;
+    color: white;
+}
 /*LOGIN*/
 
 .cont{
@@ -648,9 +675,6 @@ button {
 #account{
     margin-top: 10%;
   }
-
-
-
 
 /*REGISTER*/
 
