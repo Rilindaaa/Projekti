@@ -26,7 +26,7 @@ session_start();
                                     <li><a href="kids.php">Kids</a></li>
                                     <?php
                                     if(isset($_SESSION['role'])&& $_SESSION['role']==1){
-                                        echo '<li><a class="login" href="logout.php">Dashboard</a></li>';
+                                        echo '<li><a class="login" href="../CONTENT/dashboard.php">Dashboard</a></li>';
                                     } 
                                     if(isset($_SESSION['role'])){
                                         echo '<li><a class="login" href="../userLogic/logout.php">Log Out</a></li>';  
