@@ -374,6 +374,35 @@ button a:hover{
     color: hotpink;
 }
 
+.price{
+    margin-top: 20px;
+    margin-right: -7%;
+    font-size: 15px;
+    
+}   
+    
+#boxes .buynow{
+    background: rgb(238, 193, 142);
+    border-radius: 20px;
+    width: 20%;
+    padding: 10px;
+    margin-left: 50%;
+    border: 0px;
+}
+
+button {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+} 
+
+
+/* 
+button a:hover{
+    color: hotpink;
+}
+
 /*MEN*/
 
 .sector1>h1{

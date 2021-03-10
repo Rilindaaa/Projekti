@@ -50,6 +50,38 @@
                 </div>
             </div>
         </div>
+
+        <div class="sector">
+                <h1>SHOP</h1>
+            </div>
+        <div id ="boxes"> 
+            <div class='women'>
+                <div class='w-box'>
+                    <img src="../PICS/f71.jpg">
+                    <p class = 'price'>PRICE: 50.00$</p>
+                    <!-- <p class ="p-stili">When choosing an everyday bag you want to find something that will keep you cool but also looking good.
+                         While each woman will have different opinions on the best everyday bag, ultimately it’s up to you to choose what you’re comfortable and confident in... </p> -->
+                          <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f72.jpg">
+                    <p class ='price'>PRICE: 80.00$</p>
+                    <!-- <p class=" p-stili">When choosing a autumn outfit you want to find something that will keep you cool but also looking good.
+                        While each woman will have different opinions on the best autumn outfit, ultimately it’s up to you to choose what you’re comfortable and confident in...</p> -->
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f73.jpg">
+                    <p class ='price'>PRICE: 30.00$</p>
+                    <!-- <p class=" p-stili">When choosing a summer dress you want to find something that will keep you cool but also looking good.
+                        While each woman will have different opinions on the best summer dress, ultimately it’s up to you to choose what you’re comfortable and confident in...</p> -->
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+            </div>
+        </div>
+
+
+
         <?php
   include '../components/footer.php';
 ?>
