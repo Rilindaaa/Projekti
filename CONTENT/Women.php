@@ -68,13 +68,65 @@
                 <div class='w-box'>
                     <img src="../PICS/f74.jpg">
                     <h3> SKIRT </h3>
-                   <b> <p class ='price'>PRICE: 30.00$</p></b>
+                   <b> <p class ='price'>PRICE: 30.99$</p></b>
                         <button class="buynow"> BUY NOW </button>
                 </div>
                 <div class='w-box'>
                     <img src="../PICS/f72.jpg">
                     <h3> LONG DRESS </h3>
                    <b> <p class ='price'>PRICE: 80.00$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+            </div>
+        </div>
+
+        <div class ="dresses"> 
+                <h1>SHOES</h1>
+            </div>
+        <div id ="boxes"> 
+            <div class='women'>
+                <div class='w-box'>
+                    <img src="../PICS/f76.jpg">
+                    <h3> HEELS</h3>
+                    <b><p class = 'price'>PRICE: 55.00$</p></b>
+                          <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f77.jpg">
+                    <h3> SNEAKERS </h3>
+                   <b> <p class ='price'>PRICE: 35.00$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f78.jpg">
+                    <h3> SANDALS </h3>
+                   <b> <p class ='price'>PRICE: 25.99$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+            </div>
+        </div>
+
+        <div class ="dresses"> 
+                <h1>BAGS</h1>
+            </div>
+        <div id ="boxes"> 
+            <div class='women'>
+                <div class='w-box'>
+                    <img src="../PICS/f79.jpeg">
+                    <h3> FORMAL BAG</h3>
+                    <b><p class = 'price'>PRICE: 70.99$</p></b>
+                          <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f81.png">
+                    <h3> CASUAL BAG </h3>
+                   <b> <p class ='price'>PRICE: 40.85$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f80.jpg">
+                    <h3> SPORT BAG </h3>
+                   <b> <p class ='price'>PRICE: 30.50$</p></b>
                         <button class="buynow"> BUY NOW </button>
                 </div>
             </div>

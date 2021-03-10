@@ -28,12 +28,91 @@
                     </div>
                 </div>
                 </div>
-        </main>
-        <div id="Linku">
-            <p>
-                For more tips about men fashion click on the link: <a href="https://www.google.com/search?q=daily+men+outfit+i&tbm=isch&ved=2ahUKEwi5xPL35dDtAhUB8IUKHc-LBhkQ2-cCegQIABAA&oq=daily+men+outfit+i&gs_lcp=CgNpbWcQA1C7QVi-S2DHTWgAcAB4AIAB8gOIAbUMkgEJNy4yLjEuMC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=jxjZX_nAAoHglwTPl5rIAQ&bih=943&biw=1899&hl=en">FashionTips</a>
-            </p>
+
+
+         <div class="shopM">
+                <h1>SHOP</h1>
+         </div>
+        <div class ="jeans"> 
+                <h1>JEANS</h1>
+        </div>        
+         </div>
+        <div id ="boxes"> 
+            <div class='men'>
+                <div class='w-box'>
+                    <img src="../PICS/f83.jpg">
+                    <h3> FORMAL JEANS</h3>
+                    <b><p class = 'price'>PRICE: 35.99$</p></b>
+                          <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f82.jpg">
+                    <h3> CASUAL JEANS </h3>
+                   <b> <p class ='price'>PRICE: 25.85$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f84.jpg">
+                    <h3> SPORT JEANS </h3>
+                   <b> <p class ='price'>PRICE: 10.99$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+            </div>
         </div>
+
+
+        <div class ="jeans"> 
+                <h1>SHOES</h1>
+        </div>  
+        <div id ="boxes"> 
+            <div class='men'>
+                <div class='w-box'>
+                    <img src="../PICS/f88.jpg">
+                    <h3> FORMAL SHOES</h3>
+                    <b><p class = 'price'>PRICE: 25.00$</p></b>
+                          <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f86.jpg">
+                    <h3> CASUAL SHOES </h3>
+                   <b> <p class ='price'>PRICE: 15.99$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f87.jpg">
+                    <h3> SPORT SHOES </h3>
+                   <b> <p class ='price'>PRICE: 35.85$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+            </div>
+        </div>
+
+        <div class ="jeans"> 
+                <h1>JACKET</h1>
+        </div>  
+        <div id ="boxes"> 
+            <div class='men'>
+                <div class='w-box'>
+                    <img src="../PICS/f89.jpg">
+                    <h3> FORMAL JACKET</h3>
+                    <b><p class = 'price'>PRICE: 65.00$</p></b>
+                          <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f91.jpeg">
+                    <h3> CASUAL JACKET </h3>
+                   <b> <p class ='price'>PRICE: 40.99$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+                <div class='w-box'>
+                    <img src="../PICS/f90.jpg">
+                    <h3> SPORT JACKET </h3>
+                   <b> <p class ='price'>PRICE: 30.99$</p></b>
+                        <button class="buynow"> BUY NOW </button>
+                </div>
+            </div>
+        </div>
+        </main>
         <?php
   include '../components/footer.php';
 ?>

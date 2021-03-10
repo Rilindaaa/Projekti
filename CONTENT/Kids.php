@@ -43,11 +43,6 @@
                     </div>
                     </div>
                 </div>
-                <div id="Linku">
-                    <p>
-                        For more tips about kids fashion, follow the link: <a href="https://www.google.com/search?q=cute+kids+fashion&tbm=isch&ved=2ahUKEwjrxo2WkdPtAhVPuKQKHTMGDzkQ2-cCegQIABAA&oq=cute+kids+fashion&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgYIABAFEB4yBggAEAUQHjIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjoECAAQHlD72AVY892tAWDV360BaABwAHgAgAGnAYgBnAeSAQMwLjeYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=VFLaX-vMJM_wkgWzjLzIAw&bih=803&biw=1688&hl=en">KidsFashion</a>
-                    </p>
-                </div>
             </main>
 
             <div id ="bxo">

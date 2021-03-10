@@ -402,7 +402,7 @@ button {
     font-size: 17px;
     margin-left: 25%;
     margin-top: 5px;
-    color: rgb(218, 110, 164);
+    color: rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
 }
 .shop >h1 {
@@ -432,7 +432,7 @@ button {
 }
 
 #m-foto{
-    width: 70vw;
+    width: 73vw;
     height:60vh;
     margin-left: 15%;
     margin-top: 3%;
@@ -463,20 +463,21 @@ button {
 .m-box img {
     width: 15vw;
     height: 30vh;
-    left: 35%;
+    left: 37%;
     position: relative;
 }
 
 .paragrafi {
-    padding:15px;
+    padding:2px;
     background-color:black;
     color:white;
     margin-top:60px;
     margin-bottom:10px;
     text-align: center;
-    width: 40%;
-    margin-left: 28%;
+    width: 70%;
+    margin-left: 17%;
     font-family: sans-serif;
+    font-size: 25px;
 }
 
 #bx .m-box{
@@ -487,28 +488,48 @@ button {
 }
 
 .Stili{
-    padding:15px;
+    padding:2px;
     background-color:black;
     color:white;
     margin-top:30px;
     margin-bottom:10px;
 }
 
-.color{
-    background-color: rgb(170, 168, 168);
+.shopM >h1 {
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    color: rgb(0, 0, 0);
+    margin-left: 3%;
+}
+.jeans{
+    margin-bottom: 5px;
+    text-align: center;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.295);
+    margin-left: 21.5%;
+    color: white;
+
 }
 
-#Linku{
-  text-align: center;
-  margin-top: 1%;
-  font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  color:black;
+.men {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    left: 3%;
+    flex-direction: row;
 }
+
+.w-box .price{
+    margin-top: 5px;
+    margin-right: -7%;
+    font-size: 15px;
+    font-family: sans-serif;
+} 
+
 
 /*KIDS*/
-
-
 
 #k-foto{
     width: 70vw;
@@ -542,7 +563,7 @@ button {
 .k-box img {
     width: 15vw;
     height: 30vh;
-    left: 35%;
+    left: 20%;
     position: relative;
 }
 
@@ -576,6 +597,9 @@ button {
     font-size: 40px;
     margin-bottom: 10px;
 }
+
+
+/*LOGIN*/
 
 .cont{
     margin: auto;
@@ -624,6 +648,9 @@ button {
 #account{
     margin-top: 10%;
   }
+
+
+
 
 /*REGISTER*/
 
