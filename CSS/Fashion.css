@@ -421,9 +421,7 @@ button {
 }
 
 /* 
-button a:hover{
-    color: hotpink;
-}
+
 
 /*MEN*/
 
@@ -510,9 +508,11 @@ button a:hover{
 
 /*KIDS*/
 
+
+
 #k-foto{
     width: 70vw;
-    height:60vh; 
+    height:60vh;
     margin-left: 2%;  
 }
 
@@ -557,7 +557,7 @@ button a:hover{
 #k-txt{
     text-align: center;
     font-family: Edwardian Script ITC;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .k-color{
@@ -573,59 +573,10 @@ button a:hover{
 .k-teksti{
     text-align: center;
     font-family: Edwardian Script ITC;
-    font-size: 40px; 
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
-/*LOGIN*/
-
-.cont{
-    margin: auto;
-    width: 30%;
-    height: 20%;
-    margin-bottom: 10%;
-    margin-top: 5%;
-  }
-
-.cont form{
-    width: 60%;
-    height: 50vh;
-    padding: 20px;
-    background: rgba(235, 208, 208, 0.747);
-    text-align: center;
-    font-size: 15px;
-    margin-left: 15%;
-  }
-
-.cont form h1{
-  text-align: center;
-  margin-bottom: 30px;
-  color: hotpink;
-}
-
- .form-control{
-  width: 80%;
-  height: 30px;
-  background-color: white;
-  border: 1px solid silver;
-  margin: 10px 0 18px 0;
-  padding: 0 10px;
-  margin-top: 5%;
-  border-radius: 15px;
-}
-
-.btn{
-  margin-top: 5%;
-  padding: 2%;
-  width: 20%;
-  background: hotpink;
-  color: white;
-  border: 0px;
-}
-
-#account{
-    margin-top: 10%;
-  }
 
 /*REGISTER*/
 

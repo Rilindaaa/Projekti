@@ -11,7 +11,7 @@
                 <h1>Clothing is an important part of our everyday lives. It keeps us warm and protects us from the weather.</h1>
             </div>
             <div id ="bxo">
-                <div class='../PICS/kids'>
+                <div class='kids'>
                     <div class='k-box'>
                         <img src="../PICS/foto36.png">                    
                     </div>
@@ -49,6 +49,20 @@
                     </p>
                 </div>
             </main>
+
+            <div id ="bxo">
+                <div class='kids'>
+                    <div class='k-box'>
+                        <img src="../PICS/foto36.png">                    
+                    </div>
+                    <div class='k-box'>
+                        <img src="../PICS/f40.jpg">                           
+                    </div>
+                    <div class='k-box'>
+                        <img src="../PICS/foto35.jpg">           
+                    </div>
+                </div>
+                </div>
             <?php
   include '../components/footer.php';
 ?>
