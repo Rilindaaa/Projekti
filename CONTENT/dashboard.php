@@ -34,8 +34,9 @@
                        echo '<td id="colorchange" name="editId"><a onclick="showForm('.$count++.')">Edit</a> </td>';
                        echo '<td id="colorchange"> <a href = "../userLogic/deleteUser.php?id='.$user['userID'].'">Delete User</a></td>';
                        echo '</tr>';
-                      
+
                        echo '<div  class = "formStyle" name = "editForm" style="display:none">';
+                       echo '<div id = "editUsers"> EDIT USER </div>';
                        echo '<form   style="display:none" action="../userLogic/editUser.php" method="post">';
                        echo '<input  style = "display: none" type = "number" name = "userId" value = "'.$user['userID'].'">';;
                        echo '<label>Username</label><br>';
@@ -52,6 +53,7 @@
               </table>
         </div>
      </div> 
+
           <script> 
                   function showForm(p){
                     var items = document.getElementsByName("editForm");

@@ -742,25 +742,10 @@ button {
     
 }
 
-.dashboard-container table thead tr td{
-    background-color: aqua;
-    font-size: 25px;
-    padding: 10px;
-    
-}
-
-
 .dashboard-container table {
     margin-top: 6%;
+    margin-bottom: 30px;
 }
-
-table, th, td {
-    /*border: 2px solid black;*/
-    /* border-collapse: collapse;*/ 
-
-    
-  }
-
 
 .dashboard-container table tbody tr td{
     background-color: rgb(218, 91, 154);
@@ -768,18 +753,14 @@ table, th, td {
     border-radius: 10px;
 }
 
-
-
-
-
 .dashboard-container table tbody tr td a {
    text-decoration: none;
-    color: white;
-    
+   color: white;
 }
 
 .dashboard-container table tbody tr td a:hover{
     color: hotpink;
+    cursor: pointer;
 }
 
 #colorchange{
@@ -789,10 +770,12 @@ table, th, td {
 
 .formStyle{
     background-color: rgba(230, 197, 91, 0.486);
-    width: 35%;
-    height: 25%;
-    margin-left: 70%;
+    width: 15%;
+    height: 22%;
+    margin-left: 40%;
     border-radius: 5px;
+     margin-top: 5%; 
+    position: absolute;
     
 }
 
@@ -806,6 +789,18 @@ table, th, td {
     border: 0px;
 }
 
+#editUsers{
+    background-color: hotpink;
+    width: 170px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 13%;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 4px;
+}
 
 
 
