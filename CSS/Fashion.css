@@ -736,7 +736,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 60vh;
+   min-height: 60vh;
     border-radius: 10%;
     margin-left: 25%;
     
@@ -746,7 +746,6 @@ button {
     margin-top: 6%;
     margin-bottom: 30px;
 }
-
 .dashboard-container table tbody tr td{
     background-color: rgb(218, 91, 154);
     padding: 10px;   
@@ -776,7 +775,6 @@ button {
     border-radius: 5px;
      margin-top: 5%; 
     position: absolute;
-    
 }
 
 #saveBtn{
