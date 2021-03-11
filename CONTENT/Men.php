@@ -4,7 +4,7 @@
         <main>
             <div class="color">
             <div class="sector1">
-                <h1>M E N ' S T Y L E</h1>
+                <h1>M E N ' S E C T O R</h1>
             </div>
             <div>
                 <img id= "m-foto" src="../PICS/f34.jpg">

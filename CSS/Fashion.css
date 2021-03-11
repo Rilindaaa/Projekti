@@ -755,35 +755,57 @@ button {
 }
 
 table, th, td {
-    border: 2px solid black;
-    /* border-collapse: collapse; */
+    /*border: 2px solid black;*/
+    /* border-collapse: collapse;*/ 
+
     
   }
 
 
 .dashboard-container table tbody tr td{
-    background-color: rgb(230, 127, 184);
+    background-color: rgb(218, 91, 154);
     padding: 10px;   
+    border-radius: 10px;
 }
 
+
+
+
+
 .dashboard-container table tbody tr td a {
-    text-decoration: none;
+   text-decoration: none;
     color: white;
     
 }
 
+.dashboard-container table tbody tr td a:hover{
+    color: hotpink;
+}
+
+#colorchange{
+    background-color: lightpink;
+    color: rgb(189, 15, 102);
+}
 
 .formStyle{
     background-color: rgba(230, 197, 91, 0.486);
-    width: 30%;
+    width: 35%;
+    height: 25%;
     margin-left: 70%;
+    border-radius: 5px;
     
 }
 
 #saveBtn{
-    background-color: hotpink;
+    border-radius: 5px;
+    margin-top: 5%;
+    padding: 2%;
+    width: 20%;
+    background: hotpink;
     color: white;
+    border: 0px;
 }
+
 
 
 
