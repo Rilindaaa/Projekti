@@ -16,7 +16,7 @@ include_once '../databaseConnection/configD.php';
             $statement -> bindParam(':username',$username );
             $statement -> execute();
             $result = $statement->fetch (PDO::FETCH_ASSOC);
-            return $result;
+             return $result;
       }
 
       public function insertUser($user){
@@ -36,9 +36,49 @@ include_once '../databaseConnection/configD.php';
           $statement -> bindParam(':role', $role);
  
           $statement -> execute();
-          
-
       }
+
+      public function getAllUsers(){
+          $this->query = 'select * from user ';
+          $statement = $this-> connection ->prepare($this->query);
+          $statement -> execute();
+          $result = $statement->fetchAll (PDO::FETCH_ASSOC);
+            return $result;
+      }
+
+      public function advancedToAdmin($userId){
+          $this-> query = 'update user set role ="1" where userID =:userId';
+          $statement = $this -> connection -> prepare($this->query);
+          $statement -> bindParam(':userId', $userId);
+          $statement -> execute();
+      }
+
+      public function deleteUser($userId){
+        $this-> query = 'delete from user where userID = :userId';
+        $statement = $this -> connection -> prepare($this->query);
+        $statement -> bindParam(':userId', $userId);
+        $statement -> execute();
+    }
+
+    public function getAllUsersExcept($userId){
+        $this->query = 'select * from user where userID!=:userId';
+        $statement = $this-> connection ->prepare($this->query);
+        $statement -> bindParam(':userId', $userId);
+        $statement -> execute();
+        $result = $statement->fetchAll (PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function updateUser($userId,$username,$email){
+
+        $this->query='update user set username=:username,email=:email where userID=:userid';
+        $statement = $this-> connection ->prepare($this->query);
+        $statement -> bindParam(':userid', $userId);
+        $statement -> bindParam(':username', $username);
+        $statement -> bindParam(':email', $email);
+        $statement -> execute();
+
+    }
 
 }
 
