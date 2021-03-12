@@ -10,10 +10,10 @@
   $productList = $mapper1 -> getAllProducts();
 ?>
             <div class="dashboard-container">
-              <div >
-                <ul >
-                  <li class="selector"><a onclick="showDiv(1)">Users</a></li>
-                  <li class="selector"><a onclick="showDiv(2)">Products</a></li> 
+              <div class="selector">
+                <ul>
+                  <li><a onclick="showDiv(1)">Users</a></li>
+                  <li><a onclick="showDiv(2)">Products</a></li> 
                 </ul>
               </div>
             <div class ="firstDash-container" id="users">
@@ -91,7 +91,7 @@
                        echo '<td id="colorchange">'.$product['sektori'].'</td>';
                        echo '<td id="colorchange">'.$product['llojiProduktit'].'</td>';
                        echo '<td id="colorchange" name="editId"><a onclick="showForm('.$count++.')">Edit</a> </td>';
-                       echo '<td id="colorchange"> <a href = "../userLogic/deleteUser.php?id='.$user['userID'].'">Delete User</a></td>';
+                       echo '<td id="colorchange"> <a href = "../userLogic/deleteUser.php?id='.$user['userID'].'">Delete Product</a></td>';
                        echo '</tr>';
 
                        echo '<div  class = "formStyle" name = "editForm" style="display:none">';

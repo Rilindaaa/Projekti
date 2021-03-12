@@ -836,20 +836,24 @@ button {
     font-family: sans-serif;
     padding-top: 4px;
 }
- .selector{
+ /* .selector{
     text-decoration: none;
     list-style: none;
     display: inline;
     margin-left: 20px;
 
-}
+} */
  
-.selector ul {
+.selector ul li  {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
- 
+    float: inline-start;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
     
 }
 /*
