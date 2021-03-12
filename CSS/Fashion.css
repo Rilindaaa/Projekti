@@ -314,17 +314,18 @@ li a:hover{
 .women {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
-     position: relative; 
+    position: relative; 
     left: 2%;
     flex-direction: row;
 }
 
-/* .women .x-box{
-    display: flex;
-    flex-wrap: wrap;
-} */
+ .new-w{
+    margin-left:100px;
+}
+
+
 
 .w-box{
     display: flex;
@@ -334,26 +335,50 @@ li a:hover{
 }
 
 .w-box p {
-    margin-left: 20%;
+    margin-left: 123px;
     font-family: sans-serif;  
 }
 
 .w-box img {
     width: 15vw;
     height: 30vh;
-    left: 35%;
+    left: 150px;
     position: relative; 
 }
+
 
 #boxes .w-box{
     text-align-last:center;
     width:200PX;
     padding:10px;
-    margin-left: 20px;  
+    margin-left: -3px;  
+}
+
+.w-boxx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width:300px;
+    margin:10px 0px;
+    align-items: center;
+
+}
+
+.w-boxx h3 {
+    margin-left: 130px;
+}
+.price{
+    margin-left: 130px;
+}
+.w-boxx img {
+    width: 15vw;
+    height: 30vh;
+    left: 55px;
+    position: relative; 
 }
 
 .p-stili{
-    padding:15px;
     background-color: rgb(218, 110, 164);
     color:#ffffff;
     margin-top:30px;
@@ -361,6 +386,7 @@ li a:hover{
 }
 .new-box{
     width:400px !important;
+    margin-left:120px ;
 }
 
 #boxes .semore{
@@ -368,7 +394,7 @@ li a:hover{
     border-radius: 20px;
     width: 25%;
     padding: 10px;
-    margin-left: 50%;
+    margin-left: 220px;
     border: 0px;
 }
 
@@ -385,7 +411,6 @@ button a:hover{
 
 .w-box .price{
     margin-top: 5px;
-    margin-right: -7%;
     font-size: 15px;
     font-family: sans-serif;
 }   
@@ -395,7 +420,7 @@ button a:hover{
     border-radius: 20px;
     width: 25%;
     padding: 10px;
-    margin-left: 50%;
+    margin-left: 130px;
     border: 0px;
     margin-top: 5px;
 }
@@ -447,12 +472,15 @@ button {
 
 .men {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 90%;
-    position: relative;
+    position: relative; 
     left: 2%;
     flex-direction: row;
 }
+
+
 
 .m-box{
     display: flex;
@@ -521,7 +549,7 @@ button {
 
 .men {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
     position: relative;
     left: 3%;
@@ -808,11 +836,39 @@ button {
     font-family: sans-serif;
     padding-top: 4px;
 }
+ .selector{
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
 
+}
+ 
+.selector ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ 
+    
+}
+/*
+.selector{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    flex-direction: column;
+}
 
+#Elementet ul li{
+    list-style: none;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 25px;
+    flex-direction: row;
+}
 
-
-
+ */
 
 
 

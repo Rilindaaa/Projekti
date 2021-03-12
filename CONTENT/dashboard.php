@@ -1,12 +1,14 @@
 <?php
   include '../components/header.php';
   require_once '../userLogic/userMapper.php';
+  require_once '../productLogic/productMapper.php';
   
   $mapper = new UserMapper();
   $userList = $mapper->getAllUsers();
-?>
 
-<!-- <body style="background-image: url('../PICS/f108.jpg'); background-repeat: no-repeat; width: 100%; height: 50%;"> -->
+  $mapper1 = new ProductMapper();
+  $productList = $mapper1 -> getAllProducts();
+?>
             <div class="dashboard-container">
               <div >
                 <ul >
@@ -59,6 +61,55 @@
               </table>
         </div>
         <div id="products" style="display:none">
+        <table>
+                 <tr >
+                      <td >
+                          <b >Product Name</b>
+                      </td>
+                      <td >
+                         <b>Photo</b>
+                      </td>
+                      <td >
+                         <b>Price</b>
+                      </td>
+                      <td >
+                         <b>Sector</b>
+                      </td>
+                      <td >
+                         <b>Type</b>
+                      </td>
+                  </tr>
+                </thead>
+                  <tbody>
+                    <?php
+                   
+                    foreach($productList as $product){
+                       echo '<tr>';
+                       echo '<td id="colorchange">'.$product['emriProduktit'].'</td>';
+                       echo '<td id="colorchange"><img  style = "width:40px; height:40px" src = "../PICS/'.$product['fotoProduktit'].'"/></td>';
+                       echo '<td id="colorchange">'.$product['cmimiProduktit'].' $</td>';
+                       echo '<td id="colorchange">'.$product['sektori'].'</td>';
+                       echo '<td id="colorchange">'.$product['llojiProduktit'].'</td>';
+                       echo '<td id="colorchange" name="editId"><a onclick="showForm('.$count++.')">Edit</a> </td>';
+                       echo '<td id="colorchange"> <a href = "../userLogic/deleteUser.php?id='.$user['userID'].'">Delete User</a></td>';
+                       echo '</tr>';
+
+                       echo '<div  class = "formStyle" name = "editForm" style="display:none">';
+                       echo '<div id = "editUsers"> EDIT PRODUCTS </div>';
+                       echo '<form   style="display:none" action="../userLogic/editUser.php" method="post">';
+                       echo '<input  style = "display: none" type = "number" name = "userId" value = "'.$user['userID'].'">';;
+                       echo '<label>Product Name</label><br>';
+                       echo '<input type = "text" name = "username" value = "'.$user['username'].'"> <br>';
+                       echo '<label >Photo</label><br>';
+                       echo '<input type = "text" name = "email" value = "'.$user['email'].'"> <br>';
+                       echo '<input type = "submit" id = "saveBtn" value = "Save">';
+                       echo '</form>';
+                       echo '</div>';
+                      
+                    }
+                    ?>      
+                  </tbody>
+              </table>
           <form method="post" action="../productLogic/productVerify.php">
             <label>Name</label> <br> 
             <input type="text" name="emriProduktit" /><br>

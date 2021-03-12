@@ -1,5 +1,6 @@
 <?php
   include '../components/header.php';
+  require_once '../productLogic/productMapper.php';
 ?>
         <main>
             <div class="color">
@@ -27,7 +28,7 @@
                         <p class="Stili">We recommend this look if you want an even more daily look.</p> 
                     </div>
                 </div>
-                </div>
+            </div>
 
 
          <div class="shopM">
@@ -35,80 +36,65 @@
          </div>
         <div class ="jeans"> 
                 <h1>JEANS</h1>
-        </div>        
-         </div>
+            </div>
         <div id ="boxes"> 
             <div class='men'>
-                <div class='w-box'>
-                    <img src="../PICS/f83.jpg">
-                    <h3> FORMAL JEANS</h3>
-                    <b><p class = 'price'>PRICE: 35.99$</p></b>
-                          <button class="buynow"> BUY NOW </button>
-                </div>
-                <div class='w-box'>
-                    <img src="../PICS/f82.jpg">
-                    <h3> CASUAL JEANS </h3>
-                   <b> <p class ='price'>PRICE: 25.85$</p></b>
-                        <button class="buynow"> BUY NOW </button>
-                </div>
-                <div class='w-box'>
-                    <img src="../PICS/f84.jpg">
-                    <h3> SPORT JEANS </h3>
-                   <b> <p class ='price'>PRICE: 10.99$</p></b>
-                        <button class="buynow"> BUY NOW </button>
-                </div>
-            </div>
+                <?php 
+                $mapper = new ProductMapper();
+                $products = $mapper->getAllProducts();
+                foreach($products as $product){
+                    if($product['sektori']=='Men' && $product['llojiProduktit']=='Jeans'){
+
+                echo '<div class="w-boxx ">';
+                echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
+                echo '<h3> '.$product['emriProduktit'].' </h3>';
+                echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
+                echo ' <button class="buynow"> BUY NOW </button>';
+                echo '</div>';
+            }}
+            ?>
         </div>
-
-
         <div class ="jeans"> 
                 <h1>SHOES</h1>
-        </div>  
+            </div>
         <div id ="boxes"> 
             <div class='men'>
-                <div class='w-box'>
-                    <img src="../PICS/f88.jpg">
-                    <h3> FORMAL SHOES</h3>
-                    <b><p class = 'price'>PRICE: 25.00$</p></b>
-                          <button class="buynow"> BUY NOW </button>
-                </div>
-                <div class='w-box'>
-                    <img src="../PICS/f86.jpg">
-                    <h3> CASUAL SHOES </h3>
-                   <b> <p class ='price'>PRICE: 15.99$</p></b>
-                        <button class="buynow"> BUY NOW </button>
-                </div>
-                <div class='w-box'>
-                    <img src="../PICS/f87.jpg">
-                    <h3> SPORT SHOES </h3>
-                   <b> <p class ='price'>PRICE: 35.85$</p></b>
-                        <button class="buynow"> BUY NOW </button>
-                </div>
-            </div>
-        </div>
+                <?php 
+                $mapper = new ProductMapper();
+                $products = $mapper->getAllProducts();
+                foreach($products as $product){
+                    if($product['sektori']=='Men' && $product['llojiProduktit']=='Shoes'){
 
+                echo '<div class="w-boxx ">';
+                echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
+                echo '<h3> '.$product['emriProduktit'].' </h3>';
+                echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
+                echo ' <button class="buynow"> BUY NOW </button>';
+                echo '</div>';
+            }}
+            ?>
+        </div>
+    
         <div class ="jeans"> 
                 <h1>JACKET</h1>
-        </div>  
+            </div>
         <div id ="boxes"> 
             <div class='men'>
-                <div class='w-box'>
-                    <img src="../PICS/f89.jpg">
-                    <h3> FORMAL JACKET</h3>
-                    <b><p class = 'price'>PRICE: 65.00$</p></b>
-                          <button class="buynow"> BUY NOW </button>
-                </div>
-                <div class='w-box'>
-                    <img src="../PICS/f91.jpeg">
-                    <h3> CASUAL JACKET </h3>
-                   <b> <p class ='price'>PRICE: 40.99$</p></b>
-                        <button class="buynow"> BUY NOW </button>
-                </div>
-                <div class='w-box'>
-                    <img src="../PICS/f90.jpg">
-                    <h3> SPORT JACKET </h3>
-                   <b> <p class ='price'>PRICE: 30.99$</p></b>
-                        <button class="buynow"> BUY NOW </button>
+                <?php 
+                $mapper = new ProductMapper();
+                $products = $mapper->getAllProducts();
+                foreach($products as $product){
+                    if($product['sektori']=='Men' && $product['llojiProduktit']=='Jacket'){
+
+                echo '<div class="w-boxx ">';
+                echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
+                echo '<h3> '.$product['emriProduktit'].' </h3>';
+                echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
+                echo ' <button class="buynow"> BUY NOW </button>';
+                echo '</div>';
+            }}
+            ?>
+                 </div>
                 </div>
             </div>
         </div>

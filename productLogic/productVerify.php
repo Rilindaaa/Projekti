@@ -36,6 +36,12 @@ include_once "productMapper.php";
 
                     header('Location:../CONTENT/index.php');
             }
+            else{
+                echo '<script type="text/javascript">;';
+                echo 'window.location.href="../CONTENT/dashboard.php";';
+                echo 'alert("Column can not be empty!");';
+                echo '</script>;';
+            }
         }
         
 
