@@ -8,7 +8,13 @@
 
 <!-- <body style="background-image: url('../PICS/f108.jpg'); background-repeat: no-repeat; width: 100%; height: 50%;"> -->
             <div class="dashboard-container">
-            <div class ="firstDash-container">
+              <div >
+                <ul >
+                  <li class="selector"><a onclick="showDiv(1)">Users</a></li>
+                  <li class="selector"><a onclick="showDiv(2)">Products</a></li> 
+                </ul>
+              </div>
+            <div class ="firstDash-container" id="users">
               <table>
                 <tr >
                       <td >
@@ -52,14 +58,48 @@
                   </tbody>
               </table>
         </div>
-     </div> 
+        <div id="products" style="display:none">
+          <form method="post" action="../productLogic/productVerify.php">
+            <label>Name</label> <br> 
+            <input type="text" name="emriProduktit" /><br>
+            <label>Photo</label> <br> 
+            <input type="file" name="fotoja"/><br>
+            <label>Price</label><br>
+            <input type="float" name="cmimi"/><br>
 
+            <label for="sector" >Sector</label><br>
+            <input type="radio" name="sector" value="Women"/>
+            <label>Women</label>  
+            <input type="radio" name="sector" value="Men"/>
+            <label>Men</label>  
+            <input type="radio" name="sector" value="Kids"/>
+            <label>Kids</label><br>
+            
+            <label>Product Type</label><br>
+            <select name="producttype">
+              <option name="clothes" value="Dresses">Dresses</option>
+              <option name="clothes" value="Shoes">Shoes</option>
+              <option name="clothes" value="Bags">Bags</option>
+              <option name="clothes" value="Jeans">Jeans</option>
+              <option name="clothes" value="Jacket">Jacket</option>
+              <option name="clothes" value="T-Shirt">T-Shirt</option>
+            </select><br>
+            
+            <input type="submit" name="submit-btn" value="Register"/>
+
+          </form>
+        </div>
+     </div> 
+     
+ 
           <script> 
                   function showForm(p){
                     var items = document.getElementsByName("editForm");
+                    /*Perkujdeset me hjek*/
                      if(items[p].style.display == "block"){
                       items[p].style.display = "none";
                      } 
+                     /*perkujdeset me shfaq*/
                     else {
                       for (let i=0;i<items.length;i++){
                         items[i].style.display = "none";
@@ -68,13 +108,36 @@
                     }
                   }
               
-                  var items = document.getElementsByName('editId')
-                      for (var i = 0; i < items.length; i++) {
-                        items[i].addEventListener('click', (event) => {
-                          event.preventDefault();
-                        })
+                    var items = document.getElementsByName('editId')
+                        for (var i = 0; i < items.length; i++) {
+                         items[i].addEventListener('click', (event) => {
+                            event.preventDefault();
+                          })
+                    }  
+
+                  function showDiv(param){
+                    var users = document.getElementById('users');
+                    var products = document.getElementById('products');
+
+                    if(param=='1'){
+                      users.style.display='block';
+                      products.style.display='none';
                     }
-        </script>
+                    else if(param =='2'){
+                      users.style.display='none';
+                      products.style.display='block';
+                    }
+                    
+                    var items = document.getElementsByClassName('selector')
+                        for (var i = 0; i < items.length; i++) {
+                         items[i].addEventListener('click', (event) => {
+                            event.preventDefault();
+                          })
+                    } 
+
+                  }          
+          </script>
 <?php
   include '../components/footer.php';
 ?>
+

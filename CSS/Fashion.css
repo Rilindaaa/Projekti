@@ -313,12 +313,18 @@ li a:hover{
 
 .women {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 90%;
-    position: relative;
+     position: relative; 
     left: 2%;
     flex-direction: row;
 }
+
+/* .women .x-box{
+    display: flex;
+    flex-wrap: wrap;
+} */
 
 .w-box{
     display: flex;
@@ -341,7 +347,7 @@ li a:hover{
 
 #boxes .w-box{
     text-align-last:center;
-    width:50%;
+    width:200PX;
     padding:10px;
     margin-left: 20px;  
 }
@@ -352,6 +358,9 @@ li a:hover{
     color:#ffffff;
     margin-top:30px;
     margin-bottom:10px;  
+}
+.new-box{
+    width:400px !important;
 }
 
 #boxes .semore{
