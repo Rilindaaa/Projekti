@@ -96,26 +96,26 @@
 
                       echo  '<div  class = "productStyle" name = "editForm" style="display:none">';
                  
-                        echo ' <form class = "editProduct" method="post" action="../productLogic/editProduct.php">';
+                        echo '<form class = "editProduct" method="post" action="../productLogic/editProduct.php">';
                         echo '<input style = "display:none;" type="number" value ="'.$product['produktID'].'"name="id" /><br>';
-                        echo '<label>Name</label> <br> ';
-                        echo '<input type="text" value ="'.$product['emriProduktit'].'"name="emriProduktit" /><br>';
-                        echo '<label>Photo</label> <br> ';
+                        echo '<label id = "nameId"l>Product Name</label> <br> ';
+                        echo '<input id = "inputName" type="text" value ="'.$product['emriProduktit'].'"name="emriProduktit" /><br>';
+                        echo '<label id = "pId">Photo</label> <br> ';
                         echo '<input id = "photoId"  value = "'.$product['fotoProduktit'].'" type="file" name="fotoja"/><br>';
                         echo '<input  style = "display:none;" id = "photoId"  value = "'.$product['fotoProduktit'].'" type="text" name="fotoja1"/><br>';
-                        echo '<label>Price</label><br>';
-                        echo '<input type="float" value = "'.$product['cmimiProduktit'].'" name="cmimi"/><br>';
-                        echo '<label for="sector" >Sector</label><br>';
+                        echo '<label id = "priceId">Price</label><br>';
+                        echo '<input  id = "inputPrice"type="float" value = "'.$product['cmimiProduktit'].'" name="cmimi"/><br>';
+                        echo '<label  id = "sectorId"for="sector" >Sector</label><br>';
                         ?>
                         <input type="radio" <?php echo (($product['sektori'] =="Women")? 'checked = "checked"':''); ?> name="sector" value="Women"/>
-                        <label>Women</label>
+                        <label class = "radioo">Women</label>
                         <input type="radio" <?php echo (($product['sektori'] =="Men")? 'checked = "checked"':''); ?> name="sector" value="Men"/>
-                        <label>Men</label>
+                        <label class = "radioo">Men</label>
                         <input type="radio" <?php echo (($product['sektori'] =="Kids")? 'checked = "checked"':''); ?> name="sector" value="Kids"/>
-                        <label>Kids</label><br>
-                        <label>Product Type</label><br>
+                        <label class = "radioo">Kids</label><br>
+                        <label class = "productType">Product Type</label><br>
                         
-                        <select name="producttype"> 
+                        <select  class = "list" name="producttype"> 
                           <option name="clothes" <?php echo (($product['llojiProduktit'] =="Dresses")? 'selected = "selected"':''); ?> value="Dresses">Dresses</option>
                           <option name="clothes" <?php echo (($product['llojiProduktit'] =="Shoes")? 'selected = "selected"':''); ?> value="Shoes">Shoes</option>
                           <option name="clothes" <?php echo (($product['llojiProduktit'] =="Bags")? 'selected = "selected"':''); ?> value="Bags">Bags</option>
@@ -124,11 +124,11 @@
                           <option name="clothes" <?php echo (($product['llojiProduktit'] =="T-shirt")? 'selected = "selected"':''); ?> value="T-Shirt">T-Shirt</option>
                         </select><br>
                         <?php 
-                        echo '<input type="submit" name="submit-btn" value="Save"/>';
+                        echo '<input id = "submit" type="submit" name="submit-btn" value="Save"/>';
                       echo'</form>';
                   echo'</div>';
                     }  
-                    ?>      
+                    ?>        
                   </tbody>
                   </table>
                   

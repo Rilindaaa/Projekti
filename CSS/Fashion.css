@@ -876,21 +876,80 @@ button {
 
 /*EDIT PRODUCT*/
 
-.editProduct{
-    width: 100px;
-    background-color: #d92e7f;
-}
 
 .productStyle{
     background-color: #fed373;
-    width: 250;
+    width: 250px;
     position: absolute;
     left: 20px;
+    height: 300px;
 }
-#photoId{
-    margin-left: 20px;
+.editProduct label
+.editProduct input{
+    margin: 20px 0;;
 }
 
+/*
+#photoId{
+    margin-left: 35px; 
+    margin-top: 10px;
+}
+
+
+.priceId{
+    bottom: 20px;
+}
+
+.productType{
+    margin-top: 300x;
+} 
+
+.nameId{
+    margin-top: 50px;
+}
+
+#inputName{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#pId{
+    margin-top: 20px;
+}
+
+#inputPrice{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.editProduct #nameId{
+    margin-top: 10px;
+}
+
+.editProduct #pId{
+    margin-top: 20px;
+}
+
+.editProduct #priceId{
+    margin-top: 10px;
+}
+
+.list{
+    margin-top: 10px;
+}
+
+#sectorId{
+    margin-bottom: 30px;
+}
+
+.productStyle label{
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+.productStyle #sectorId{
+    margin-bottom: 10px;
+} */
 /*RESPONSIVITETI IPAD PRO*/
 
 /*HOME*/
