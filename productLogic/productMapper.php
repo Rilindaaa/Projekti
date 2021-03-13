@@ -38,5 +38,25 @@ class ProductMapper extends DbConfig{
         return $result;
         
     }
+
+    public function updateProduct($productID, $productName, $productPhoto, $productPrice , $productSector, $productClothes){
+        $this->query ='update produkte set emriProduktit =:productName ,  fotoProduktit = :productPhoto, cmimiProduktit = :productPrice, sektori =:productSector,  llojiProduktit =:productClothes where produktID = :productID';
+        $statement = $this-> connection -> prepare($this->query);
+        $statement -> bindParam(':productName', $productName );
+        $statement -> bindParam(':productPhoto', $productPhoto );
+        $statement -> bindParam(':productPrice', $productPrice );
+        $statement -> bindParam(':productSector', $productSector );
+        $statement -> bindParam(':productClothes', $productClothes);
+        $statement -> bindParam(':productID', $productID);
+
+        $statement -> execute();
+    }
+
+    public function deleteProduct($produktId){
+        $this-> query = 'delete from produkte where produktID = :produkti';
+        $statement = $this -> connection -> prepare($this->query);
+        $statement -> bindParam(':produkti', $produktId);
+        $statement -> execute();
+    }
 }
 

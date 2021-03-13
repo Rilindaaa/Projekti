@@ -9,6 +9,7 @@ class Admin extends Person {
 
    public function setSession(){
        $_SESSION['role']=1;
+       $_SESSION['username'] = $username;
    }
    public function setCookie(){
     setcookie('username',$this->getUsername(),time()+2*24*60*60);

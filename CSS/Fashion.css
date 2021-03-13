@@ -874,8 +874,22 @@ button {
 
  */
 
+/*EDIT PRODUCT*/
 
+.editProduct{
+    width: 100px;
+    background-color: #d92e7f;
+}
 
+.productStyle{
+    background-color: #fed373;
+    width: 250;
+    position: absolute;
+    left: 20px;
+}
+#photoId{
+    margin-left: 20px;
+}
 
 /*RESPONSIVITETI IPAD PRO*/
 

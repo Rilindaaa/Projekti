@@ -1,6 +1,7 @@
 <?php
   include '../components/header.php';
   require_once '../productLogic/productMapper.php';
+  require_once '../userLogic/userMapper.php';
 ?>
         <main>
             <div class="color">
@@ -30,7 +31,6 @@
                 </div>
             </div>
 
-
          <div class="shopM">
                 <h1>SHOP</h1>
          </div>
@@ -42,6 +42,10 @@
                 <?php 
                 $mapper = new ProductMapper();
                 $products = $mapper->getAllProducts();
+                if(isset ($_SESSION['role'])){
+                    $mapper1 = new UserMapper();
+                    $user = $mapper1 -> getLogedInUserId($_SESSION['username']);
+                }
                 foreach($products as $product){
                     if($product['sektori']=='Men' && $product['llojiProduktit']=='Jeans'){
 
@@ -49,7 +53,9 @@
                 echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
                 echo '<h3> '.$product['emriProduktit'].' </h3>';
                 echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
-                echo ' <button class="buynow"> BUY NOW </button>';
+                echo ' <a href = "../buyLogic/buyNow.php?userId = '.$user['userID'].' && IDProduktit ='.$product['produktID'].' && productName = '.$product['emriProduktit'].' 
+                && productFoto ='.$product['fotoProduktit'].' && productPrice = '.$product['cmimiProduktit'].' && productSector = '.$product['sektori'].'
+                && productType = '.$product['llojiProduktit'].'"><button class="buynow"> BUY NOW </button></a>';
                 echo '</div>';
             }}
             ?>
@@ -69,7 +75,9 @@
                 echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
                 echo '<h3> '.$product['emriProduktit'].' </h3>';
                 echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
-                echo ' <button class="buynow"> BUY NOW </button>';
+                echo ' <a href = "../buyLogic/buyNow.php?userId = '.$user['userID'].' && IDProduktit ='.$product['produktID'].' && productName = '.$product['emriProduktit'].' 
+                && productFoto ='.$product['fotoProduktit'].' && productPrice = '.$product['cmimiProduktit'].' && productSector = '.$product['sektori'].'
+                && productType = '.$product['llojiProduktit'].'"><button class="buynow"> BUY NOW </button></a>';
                 echo '</div>';
             }}
             ?>
@@ -90,7 +98,9 @@
                 echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
                 echo '<h3> '.$product['emriProduktit'].' </h3>';
                 echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
-                echo ' <button class="buynow"> BUY NOW </button>';
+                echo ' <a href = "../buyLogic/buyNow.php?userId = '.$user['userID'].' && IDProduktit ='.$product['produktID'].' && productName = '.$product['emriProduktit'].' 
+                && productFoto ='.$product['fotoProduktit'].' && productPrice = '.$product['cmimiProduktit'].' && productSector = '.$product['sektori'].'
+                && productType = '.$product['llojiProduktit'].'"><button class="buynow"> BUY NOW </button></a>';
                 echo '</div>';
             }}
             ?>

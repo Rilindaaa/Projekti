@@ -80,5 +80,14 @@ include_once '../databaseConnection/configD.php';
 
     }
 
+    public function getLogedInUserId($username){
+        $this->query = 'select * from user where username = :userName';
+        $statement = $this-> connection -> prepare($this->query);
+        $statement -> bindParam(':userName',$username );
+        $statement -> execute();
+        $result = $statement->fetch (PDO::FETCH_ASSOC);
+        return $result;
+    }
+
 }
 

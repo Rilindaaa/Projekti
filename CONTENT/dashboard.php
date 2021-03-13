@@ -59,9 +59,9 @@
                     ?>      
                   </tbody>
               </table>
-        </div>
+          </div>
         <div id="products" style="display:none">
-        <table>
+          <table>
                  <tr >
                       <td >
                           <b >Product Name</b>
@@ -91,25 +91,49 @@
                        echo '<td id="colorchange">'.$product['sektori'].'</td>';
                        echo '<td id="colorchange">'.$product['llojiProduktit'].'</td>';
                        echo '<td id="colorchange" name="editId"><a onclick="showForm('.$count++.')">Edit</a> </td>';
-                       echo '<td id="colorchange"> <a href = "../userLogic/deleteUser.php?id='.$user['userID'].'">Delete Product</a></td>';
+                       echo '<td id="colorchange"> <a href = "../productLogic/deleteProduct.php?id='.$product['produktID'].'">Delete Product</a></td>';
                        echo '</tr>';
 
-                       echo '<div  class = "formStyle" name = "editForm" style="display:none">';
-                       echo '<div id = "editUsers"> EDIT PRODUCTS </div>';
-                       echo '<form   style="display:none" action="../userLogic/editUser.php" method="post">';
-                       echo '<input  style = "display: none" type = "number" name = "userId" value = "'.$user['userID'].'">';;
-                       echo '<label>Product Name</label><br>';
-                       echo '<input type = "text" name = "username" value = "'.$user['username'].'"> <br>';
-                       echo '<label >Photo</label><br>';
-                       echo '<input type = "text" name = "email" value = "'.$user['email'].'"> <br>';
-                       echo '<input type = "submit" id = "saveBtn" value = "Save">';
-                       echo '</form>';
-                       echo '</div>';
-                      
-                    }
+                      echo  '<div  class = "productStyle" name = "editForm" style="display:none">';
+                 
+                        echo ' <form class = "editProduct" method="post" action="../productLogic/editProduct.php">';
+                        echo '<input style = "display:none;" type="number" value ="'.$product['produktID'].'"name="id" /><br>';
+                        echo '<label>Name</label> <br> ';
+                        echo '<input type="text" value ="'.$product['emriProduktit'].'"name="emriProduktit" /><br>';
+                        echo '<label>Photo</label> <br> ';
+                        echo '<input id = "photoId"  value = "'.$product['fotoProduktit'].'" type="file" name="fotoja"/><br>';
+                        echo '<input  style = "display:none;" id = "photoId"  value = "'.$product['fotoProduktit'].'" type="text" name="fotoja1"/><br>';
+                        echo '<label>Price</label><br>';
+                        echo '<input type="float" value = "'.$product['cmimiProduktit'].'" name="cmimi"/><br>';
+                        echo '<label for="sector" >Sector</label><br>';
+                        ?>
+                        <input type="radio" <?php echo (($product['sektori'] =="Women")? 'checked = "checked"':''); ?> name="sector" value="Women"/>
+                        <label>Women</label>
+                        <input type="radio" <?php echo (($product['sektori'] =="Men")? 'checked = "checked"':''); ?> name="sector" value="Men"/>
+                        <label>Men</label>
+                        <input type="radio" <?php echo (($product['sektori'] =="Kids")? 'checked = "checked"':''); ?> name="sector" value="Kids"/>
+                        <label>Kids</label><br>
+                        <label>Product Type</label><br>
+                        
+                        <select name="producttype"> 
+                          <option name="clothes" <?php echo (($product['llojiProduktit'] =="Dresses")? 'selected = "selected"':''); ?> value="Dresses">Dresses</option>
+                          <option name="clothes" <?php echo (($product['llojiProduktit'] =="Shoes")? 'selected = "selected"':''); ?> value="Shoes">Shoes</option>
+                          <option name="clothes" <?php echo (($product['llojiProduktit'] =="Bags")? 'selected = "selected"':''); ?> value="Bags">Bags</option>
+                          <option name="clothes" <?php echo (($product['llojiProduktit'] =="Jeans")? 'selected = "selected"':''); ?> value="Jeans">Jeans</option>
+                          <option name="clothes" <?php echo (($product['llojiProduktit'] =="Jacket")? 'selected = "selected"':''); ?> value="Jacket">Jacket</option>
+                          <option name="clothes" <?php echo (($product['llojiProduktit'] =="T-shirt")? 'selected = "selected"':''); ?> value="T-Shirt">T-Shirt</option>
+                        </select><br>
+                        <?php 
+                        echo '<input type="submit" name="submit-btn" value="Save"/>';
+                      echo'</form>';
+                  echo'</div>';
+                    }  
                     ?>      
                   </tbody>
-              </table>
+                  </table>
+                  
+    
+              
           <form method="post" action="../productLogic/productVerify.php">
             <label>Name</label> <br> 
             <input type="text" name="emriProduktit" /><br>
@@ -140,6 +164,7 @@
 
           </form>
         </div>
+     </div> 
      </div> 
      
  

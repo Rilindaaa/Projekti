@@ -7,6 +7,7 @@ class SimpleUser extends Person{
 
     public function setSession(){
         $_SESSION['role']=0;
+        $_SESSION['username'] = $username;
     } 
 
     public function setCookie(){
