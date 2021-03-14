@@ -2,9 +2,13 @@
   include '../components/header.php';
   require_once '../userLogic/userMapper.php';
   require_once '../productLogic/productMapper.php';
+  require_once '../buyLogic/buyProductMapper.php';
+  
   
   $mapper = new UserMapper();
   $userList = $mapper->getAllUsers();
+  $mapper2 = new BuyProductMapper();
+  $productList2 = $mapper2->getAllOrders();
 
   $mapper1 = new ProductMapper();
   $productList = $mapper1 -> getAllProducts();
@@ -14,6 +18,7 @@
                 <ul>
                   <li><a onclick="showDiv(1)">Users</a></li>
                   <li><a onclick="showDiv(2)">Products</a></li> 
+                  <li><a onclick="showDiv(3)">Orders</a></li>
                 </ul>
               </div>
             <div class ="firstDash-container" id="users">
@@ -129,7 +134,7 @@
                   echo'</div>';
                     }  
                     ?>        
-                  </tbody>
+                  </tbody> 
                   </table>
                   
     
@@ -164,9 +169,55 @@
 
           </form>
         </div>
-     </div> 
-     </div> 
      
+            <div id="orders" style="display:none">
+            <table>
+                 <tr >
+                      <td>
+                         <b>Username</b>
+                      </td>
+                      <td >
+                          <b >Product Name</b>
+                      </td>
+                      <td >
+                         <b>Photo</b>
+                      </td>
+                      <td >
+                         <b>Price</b>
+                      </td>
+                      <td >
+                         <b>Sector</b>
+                      </td>
+                      <td >
+                         <b>Type</b>
+                      </td>
+                  </tr>
+                </thead>
+                  <tbody>
+                    <?php
+                   
+                    foreach($productList2 as $product){
+                      $mapper3 = new UserMapper();
+                      $user = $mapper3->getUsernameById($product['userId']);
+
+                       echo '<tr>';
+                       echo '<td id="colorchange">'.$user.'</td>';
+                       echo '<td id="colorchange">'.$product['productName'].'</td>';
+                       echo '<td id="colorchange"><img  style = "width:40px; height:40px" src = "../PICS/'.$product['productPhoto'].'"/></td>';
+                       echo '<td id="colorchange">'.$product['productPrice'].' $</td>';
+                       echo '<td id="colorchange">'.$product['productSector'].'</td>';
+                       echo '<td id="colorchange">'.$product['productType'].'</td>';
+                       echo '<td id="colorchange"> <a href = "../buyLogic/deleteBoughtProduct.php?id='.$product['orderId'].'">Delete Product</a></td>';
+                       echo '</tr>';
+                    }  
+                    ?>        
+                  </tbody> 
+                  </table>
+                  
+            </div>  
+     </div> 
+     </div> 
+
  
           <script> 
                   function showForm(p){
@@ -174,6 +225,7 @@
                     /*Perkujdeset me hjek*/
                      if(items[p].style.display == "block"){
                       items[p].style.display = "none";
+                      
                      } 
                      /*perkujdeset me shfaq*/
                     else {
@@ -194,17 +246,27 @@
                   function showDiv(param){
                     var users = document.getElementById('users');
                     var products = document.getElementById('products');
+                    var orders = document.getElementById('orders');
 
                     if(param=='1'){
                       users.style.display='block';
                       products.style.display='none';
+                      orders.style.display='none';
                     }
-                    else if(param =='2'){
+                    else if(param=='2'){
                       users.style.display='none';
                       products.style.display='block';
+                      orders.style.display='none';
+                    }
+                    else if(param=='3'){
+                      users.style.display='none';
+                      products.style.display='none';
+                      orders.style.display='block';
                     }
                     
-                    var items = document.getElementsByClassName('selector')
+                
+                    
+                    var items = document.getElementsByClassName('selector');
                         for (var i = 0; i < items.length; i++) {
                          items[i].addEventListener('click', (event) => {
                             event.preventDefault();

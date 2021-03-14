@@ -81,12 +81,22 @@ include_once '../databaseConnection/configD.php';
     }
 
     public function getLogedInUserId($username){
-        $this->query = 'select * from user where username = :userName';
+        $this->query = 'select * from user where username = :userName limit 1';
         $statement = $this-> connection -> prepare($this->query);
         $statement -> bindParam(':userName',$username );
         $statement -> execute();
-        $result = $statement->fetch (PDO::FETCH_ASSOC);
+        $result = $statement->fetch ();
         return $result;
+
+    }
+
+    public function getUsernameById($userId){
+        $this->query = 'select username from user where userID = :userID';
+        $statement = $this-> connection ->prepare($this->query);
+        $statement -> bindParam(':userID',$userId );
+        $statement -> execute();
+        $result = $statement->fetchColumn();
+         return $result;
     }
 
 }

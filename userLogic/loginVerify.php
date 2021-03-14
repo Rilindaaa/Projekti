@@ -35,6 +35,7 @@
           
         }
         else if($this-> verifyExist($this->username, $this->password)){
+            $_SESSION['username'] = $this->username;
             header('Location:../CONTENT/index.php');
         }
         else{
@@ -101,6 +102,7 @@
                 $mapper->insertUser($user);
 
                 if($this->verifyExist($this->username, $this->password)){
+                    $_SESSION['username'] = $this->username;
                     header('Location:../CONTENT/index.php');
                 }
             }
