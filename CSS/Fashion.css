@@ -766,22 +766,20 @@ button {
 /*DASHBOARD*/
 
 .dashboard-container{
-    width: 50vw;
-    /* background-color:rgb(161, 156, 160); */
+     width: 90%; 
     text-align: center;
-    margin-left: 0%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-   min-height: 60vh;
+    min-height: 60vh;
     border-radius: 10%;
-    margin-left: 25%;
+
+
     
 }
 
 .dashboard-container table {
-    margin-top: 6%;
-    margin-bottom: 30px;
+  margin: 0px 0px 0px 200px;
 }
 .dashboard-container table tbody tr td{
     background-color: rgb(218, 91, 154);
@@ -808,9 +806,9 @@ button {
     background-color: rgba(230, 197, 91, 0.486);
     width: 15%;
     height: 22%;
-    margin-left: 40%;
+    margin-left: 58%;
     border-radius: 5px;
-     margin-top: 5%; 
+    margin-top: 5%; 
     position: absolute;
 }
 
@@ -836,120 +834,141 @@ button {
     font-family: sans-serif;
     padding-top: 4px;
 }
- /* .selector{
-    text-decoration: none;
-    list-style: none;
-    display: inline;
-    margin-left: 20px;
-
-} */
  
 .selector ul li  {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    float: inline-start;
-    text-decoration: none;
-    list-style: none;
-    display: inline;
-    margin-left: 20px;
+   text-decoration: none;
+   list-style: none;
+   font-size: 25px;
+   border:2px solid black;
+   cursor: pointer;
+   padding: 5px;
+   margin: 5px;
+   margin-right: 50px;
+   width: 90px;
+   background-color:rgb(214, 202, 161);
+   color: white;
+   border-radius: 10px;
     
 }
-/*
-.selector{
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-    flex-direction: column;
+
+.selector ul{
+    position: absolute;
+    left: 0;
+    
 }
 
-#Elementet ul li{
-    list-style: none;
-    margin-left: 15px;
-    padding: 10px;
-    font-size: 25px;
-    flex-direction: row;
+.selector ul li:hover{
+    width: 110px;
 }
 
- */
+
 
 /*EDIT PRODUCT*/
 
 
 .productStyle{
-    background-color: #fed373;
-    width: 250px;
-    position: absolute;
-    left: 20px;
-    height: 300px;
-}
-.editProduct label
-.editProduct input{
-    margin: 20px 0;;
+    background-color: rgba(230, 197, 91, 0.486);
+    position: fixed;
+    left: 80px;
+    height: 315px;
+    top:350px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-/*
-#photoId{
-    margin-left: 35px; 
-    margin-top: 10px;
+.productStyle input {
+    margin: 8px 0;
 }
 
-
-.priceId{
-    bottom: 20px;
-}
-
-.productType{
-    margin-top: 300x;
-} 
-
-.nameId{
-    margin-top: 50px;
-}
-
-#inputName{
-    margin-top: 10px;
+.productStyle label {
     margin-bottom: 10px;
 }
 
-#pId{
-    margin-top: 20px;
+.productStyle select {
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 2px;
 }
 
-#inputPrice{
-    margin-top: 10px;
+#submit{
+border-radius: 5px;
+padding: 2%;
+width: 20%;
+background: hotpink;
+color: white;
+border: 0px;
+}
+
+
+.productStyle p{
+background-color: hotpink;
+width: 170px;
+height: 20px;
+border-radius: 5px;
+margin-left: 15%;
+font-size: 15px;
+color: white;
+font-family: sans-serif;
+padding-top: 4px;
+}
+
+/*REGISTER PRODUCT*/
+
+#products{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+#products table {
+    margin-right: 150px;
+}
+
+.registerEdit{
+    margin-right: -300px;
+    background-color: rgba(230, 197, 91, 0.486);
+    height: 315px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.registerEdit input {
+    margin: 8px 0;
+}
+
+.registerEdit label {
     margin-bottom: 10px;
 }
 
-.editProduct #nameId{
+.registerEdit select {
     margin-top: 10px;
+    border-radius: 8px;
+    padding: 2px;
 }
 
-.editProduct #pId{
-    margin-top: 20px;
+.registerEdit p{
+    background-color: hotpink;
+    width: 170px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 15%;
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 4px;
 }
 
-.editProduct #priceId{
-    margin-top: 10px;
-}
 
-.list{
-    margin-top: 10px;
-}
-
-#sectorId{
-    margin-bottom: 30px;
-}
-
-.productStyle label{
-        margin-top: 10px;
-        margin-bottom: 10px;
-}
-
-.productStyle #sectorId{
-    margin-bottom: 10px;
-} */
+#regId{
+    border-radius: 5px;
+    padding: 2%;
+    width: 25%;
+    background: hotpink;
+    color: white;
+    border: 0px;
+    }
+    
+    
 /*RESPONSIVITETI IPAD PRO*/
 
 /*HOME*/

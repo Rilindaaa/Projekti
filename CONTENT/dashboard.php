@@ -99,18 +99,18 @@
                        echo '<td id="colorchange"> <a href = "../productLogic/deleteProduct.php?id='.$product['produktID'].'">Delete Product</a></td>';
                        echo '</tr>';
 
-                      echo  '<div  class = "productStyle" name = "editForm" style="display:none">';
-                 
+                        echo  '<div  class = "productStyle" name = "editForm" style="display:none">';
+                        echo '<p>EDIT PRODUCTS</p>';
                         echo '<form class = "editProduct" method="post" action="../productLogic/editProduct.php">';
-                        echo '<input style = "display:none;" type="number" value ="'.$product['produktID'].'"name="id" /><br>';
-                        echo '<label id = "nameId"l>Product Name</label> <br> ';
-                        echo '<input id = "inputName" type="text" value ="'.$product['emriProduktit'].'"name="emriProduktit" /><br>';
-                        echo '<label id = "pId">Photo</label> <br> ';
+                        echo '<label id = "nameId">Product Name</label> <br> ';
+                        echo '<input id type="text" value ="'.$product['emriProduktit'].'"name="emriProduktit" /><br>';
+                        echo '<label id >Photo</label> <br> ';
                         echo '<input id = "photoId"  value = "'.$product['fotoProduktit'].'" type="file" name="fotoja"/><br>';
-                        echo '<input  style = "display:none;" id = "photoId"  value = "'.$product['fotoProduktit'].'" type="text" name="fotoja1"/><br>';
                         echo '<label id = "priceId">Price</label><br>';
                         echo '<input  id = "inputPrice"type="float" value = "'.$product['cmimiProduktit'].'" name="cmimi"/><br>';
                         echo '<label  id = "sectorId"for="sector" >Sector</label><br>';
+
+
                         ?>
                         <input type="radio" <?php echo (($product['sektori'] =="Women")? 'checked = "checked"':''); ?> name="sector" value="Women"/>
                         <label class = "radioo">Women</label>
@@ -130,17 +130,22 @@
                         </select><br>
                         <?php 
                         echo '<input id = "submit" type="submit" name="submit-btn" value="Save"/>';
+                        echo '<input style = "display:none;" type="number" value ="'.$product['produktID'].'"name="id" /><br>';
+                        echo '<input  style = "display:none;" id = "photoId"  value = "'.$product['fotoProduktit'].'" type="text" name="fotoja1"/><br>';
+
+
                       echo'</form>';
                   echo'</div>';
                     }  
                     ?>        
                   </tbody> 
-                  </table>
+             </table>
                   
     
               
-          <form method="post" action="../productLogic/productVerify.php">
-            <label>Name</label> <br> 
+          <form class = "registerEdit"  method="post" action="../productLogic/productVerify.php">
+          <p>REGISTER PRODUCTS</p>
+            <label>Product Name</label> <br> 
             <input type="text" name="emriProduktit" /><br>
             <label>Photo</label> <br> 
             <input type="file" name="fotoja"/><br>
@@ -165,7 +170,7 @@
               <option name="clothes" value="T-Shirt">T-Shirt</option>
             </select><br>
             
-            <input type="submit" name="submit-btn" value="Register"/>
+            <input id = "regId" type="submit" name="submit-btn" value="Register"/>
 
           </form>
         </div>
@@ -255,7 +260,7 @@
                     }
                     else if(param=='2'){
                       users.style.display='none';
-                      products.style.display='block';
+                      products.style.display='flex';
                       orders.style.display='none';
                     }
                     else if(param=='3'){
