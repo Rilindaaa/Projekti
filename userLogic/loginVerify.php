@@ -28,6 +28,7 @@
         $this-> password = $data['password'];
 
     }
+    
 
     public function verifyData(){
         if($this->verifyEmptyData($this->username, $this->password)){
@@ -76,7 +77,7 @@
          }    
     }
 }
-
+p
     class Register {
 
         private $username="";
@@ -84,7 +85,7 @@
         private $confirmpassword="";
         private $email="";
         private $emailRegex ="/^\S+@\S+\.\S+$/";
-        private $usernameRegex="/^[A-Z][a-z]{5,}$/";
+        private $usernameRegex="/^[A-Z][a-z]{4,}$/";
         private $passwordRegex="/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/";
 
 

@@ -9,8 +9,8 @@ function formValidations(event) {
         event.preventDefault();
         return false;
     }
-    else if(username.length < 6) {
-        alert("Username must be longer than 5 characters!");
+    else if(username.length < 5) {
+        alert("Username must be longer than 5 characters!"); 
         event.preventDefault();
         return false;
     }
@@ -36,7 +36,7 @@ function formValidations(event) {
         return false;
     }
     else{
-        alert("Login successful!");
+        return true;
     }
 }
 function hasNumber(password) {

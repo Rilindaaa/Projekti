@@ -18,8 +18,7 @@ if(isset($_GET['userId']) && isset($_GET['IDProduktit']) && isset($_GET['product
 
    header("Location:$pageUrl");
 }
-
-
+ 
 
 
 

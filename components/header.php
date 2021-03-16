@@ -1,5 +1,9 @@
 <?php 
 session_start();
+
+include_once "../buyLogic/buyProductMapper.php";
+include_once "../userLogic/userMapper.php";
+ 
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,6 +29,10 @@ session_start();
                                     <li><a href="men.php">Men</a></li>
                                     <li><a href="kids.php">Kids</a></li>
                                     <?php
+                                    if(isset($_SESSION['role'])&& $_SESSION['role']==0){
+                                        echo '<li><a onclick= "showDiv()" class="login"><i class="fa fa-shopping-cart"></i></a></li>';
+
+                                    } 
                                     if(isset($_SESSION['role'])&& $_SESSION['role']==1){
                                         echo '<li><a class="login" href="../CONTENT/dashboard.php">Dashboard</a></li>';
                                     } 
@@ -40,4 +48,46 @@ session_start();
                      </div> 
                  </div>                 
         </header>
+        
+        <?php
+            if(isset($_SESSION['role'])&& $_SESSION['role']==0){
+                $mapper1 = new BuyProductMapper();
+                $orders = $mapper1 -> getAllOrders();      
+
+                $mapper2 = new UserMapper();
+                $user = $mapper2 ->getLogedInUserId($_SESSION['username']);
+            
+            echo  '<div id = "orders" style="display:none" class="first-Div">'; 
+            echo '<h2>ORDERS</h2>';
+            foreach($orders as $order){
+                if($order['userId']==$user['userID']){       
+                echo '<div class = "second-Div">' ;
+                echo '<img src="../PICS/'.$order['productPhoto'].'">'; 
+                echo '<div class="third-Div">';
+                echo '<h3>'.$order['productName'].'</h3>';
+                echo '<h4>'.$order['productPrice'].' $</h4>';
+                echo '<a href="../buyLogic/deleteBoughtProduct.php?id='.$order['orderId'].' && pageURL='.$_SERVER['PHP_SELF'].'">Delete</a>';
+                echo '</div>';
+                echo '</div>';
+                }
+            }
+            echo '</div>';
+        }
+        ?> 
  <body>
+ <script>
+    
+    function showDiv(){
+        var orders = document.getElementById('orders');
+
+        
+        if(orders.style.display=="block"){
+            orders.style.display="none";
+        }
+        else if( orders.style.display=="none"){
+            orders.style.display="block";
+           
+        } 
+    }
+
+ </script>

@@ -98,18 +98,17 @@
                        echo '<td id="colorchange" name="editId"><a onclick="showForm('.$count++.')">Edit</a> </td>';
                        echo '<td id="colorchange"> <a href = "../productLogic/deleteProduct.php?id='.$product['produktID'].'">Delete Product</a></td>';
                        echo '</tr>';
-
+                       echo '<div class="productStyle-Wrapper">';
                         echo  '<div  class = "productStyle" name = "editForm" style="display:none">';
                         echo '<p>EDIT PRODUCTS</p>';
                         echo '<form class = "editProduct" method="post" action="../productLogic/editProduct.php">';
                         echo '<label id = "nameId">Product Name</label> <br> ';
                         echo '<input id type="text" value ="'.$product['emriProduktit'].'"name="emriProduktit" /><br>';
                         echo '<label id >Photo</label> <br> ';
-                        echo '<input id = "photoId"  value = "'.$product['fotoProduktit'].'" type="file" name="fotoja"/><br>';
+                        echo '<input id="fotoja-Id"  value = "'.$product['fotoProduktit'].'" type="file" name="fotoja"/><br>';
                         echo '<label id = "priceId">Price</label><br>';
                         echo '<input  id = "inputPrice"type="float" value = "'.$product['cmimiProduktit'].'" name="cmimi"/><br>';
                         echo '<label  id = "sectorId"for="sector" >Sector</label><br>';
-
 
                         ?>
                         <input type="radio" <?php echo (($product['sektori'] =="Women")? 'checked = "checked"':''); ?> name="sector" value="Women"/>
@@ -136,6 +135,7 @@
 
                       echo'</form>';
                   echo'</div>';
+                  echo '</div>';
                     }  
                     ?>        
                   </tbody> 
@@ -148,7 +148,7 @@
             <label>Product Name</label> <br> 
             <input type="text" name="emriProduktit" /><br>
             <label>Photo</label> <br> 
-            <input type="file" name="fotoja"/><br>
+            <input type="file" id="fotoja-Id" name="fotoja"/><br>
             <label>Price</label><br>
             <input type="float" name="cmimi"/><br>
 
@@ -212,7 +212,7 @@
                        echo '<td id="colorchange">'.$product['productPrice'].' $</td>';
                        echo '<td id="colorchange">'.$product['productSector'].'</td>';
                        echo '<td id="colorchange">'.$product['productType'].'</td>';
-                       echo '<td id="colorchange"> <a href = "../buyLogic/deleteBoughtProduct.php?id='.$product['orderId'].'">Delete Product</a></td>';
+                       echo '<td id="colorchange"> <a href = "../buyLogic/deleteBoughtProduct.php?id='.$product['orderId'].' && pageURL='.$_SERVER['PHP_SELF'].'">Delete Order</a></td>';
                        echo '</tr>';
                     }  
                     ?>        
