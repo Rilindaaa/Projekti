@@ -1,5 +1,5 @@
 <footer>
-            <div id ="f-color">
+            <div id ="f-color" >
                 <div class="wrapper">
                     <div class="single-footer">
                        <ul>
@@ -21,7 +21,6 @@
                  </div>
                 </div> 
               </div>
-            </div> 
-        </footer>
-        </body>
+            </div>
+            </footer> 
 </html>

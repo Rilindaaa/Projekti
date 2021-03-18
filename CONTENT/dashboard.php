@@ -91,13 +91,13 @@
                     foreach($productList as $product){
                        echo '<tr>';
                        echo '<td id="colorchange">'.$product['emriProduktit'].'</td>';
-                       echo '<td id="colorchange"><img  style = "width:40px; height:40px" src = "../PICS/'.$product['fotoProduktit'].'"/></td>';
+                       echo '<td id="colorchange"><img class="photoStyle" style = "width:70px; height:70px" src = "../PICS/'.$product['fotoProduktit'].'"/></td>';
                        echo '<td id="colorchange">'.$product['cmimiProduktit'].' $</td>';
                        echo '<td id="colorchange">'.$product['sektori'].'</td>';
                        echo '<td id="colorchange">'.$product['llojiProduktit'].'</td>';
                        echo '<td id="colorchange" name="editId"><a onclick="showForm('.$count++.')">Edit</a> </td>';
                        echo '<td id="colorchange"> <a href = "../productLogic/deleteProduct.php?id='.$product['produktID'].'">Delete Product</a></td>';
-                       echo '</tr>';
+                       
                        echo '<div class="productStyle-Wrapper">';
                         echo  '<div  class = "productStyle" name = "editForm" style="display:none">';
                         echo '<p>EDIT PRODUCTS</p>';
@@ -135,12 +135,15 @@
 
                       echo'</form>';
                   echo'</div>';
+                  
                   echo '</div>';
+                  echo '</tr>';
                     }  
                     ?>        
                   </tbody> 
              </table>
                   
+          
     
               
           <form class = "registerEdit"  method="post" action="../productLogic/productVerify.php">
@@ -208,7 +211,7 @@
                        echo '<tr>';
                        echo '<td id="colorchange">'.$user.'</td>';
                        echo '<td id="colorchange">'.$product['productName'].'</td>';
-                       echo '<td id="colorchange"><img  style = "width:40px; height:40px" src = "../PICS/'.$product['productPhoto'].'"/></td>';
+                       echo '<td id="colorchange"><img class="photoStyle" style = "width:70px; height:70px" src = "../PICS/'.$product['productPhoto'].'"/></td>';
                        echo '<td id="colorchange">'.$product['productPrice'].' $</td>';
                        echo '<td id="colorchange">'.$product['productSector'].'</td>';
                        echo '<td id="colorchange">'.$product['productType'].'</td>';

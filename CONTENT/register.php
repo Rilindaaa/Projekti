@@ -6,7 +6,7 @@
         <link href="../CSS/fashion.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body style="background-image: url('../PICS/f67.jpg'); background-repeat: no-repeat; width: 100%; height: 50%;">
+    <body class="Regpic-bodyClass" style="background-image: url('../PICS/f67.jpg'); background-repeat: no-repeat; width: 100%; height: 50%;">
         <header>    
             <div id="content" style="background-color: white;">
                     <div id ="Header">

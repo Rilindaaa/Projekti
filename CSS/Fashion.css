@@ -135,6 +135,13 @@ li a:hover{
 
  /*FOOTER*/
 
+ #f-color {
+    background-color: rgb(214, 202, 161);
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+}
+
 .single-footer{
     width: 33%;
     float: left;
@@ -674,7 +681,7 @@ button {
   }
 
 .cont form{
-    width: 60%;
+    width: 55%;
     height: 50vh;
     padding: 20px;
     background: rgba(235, 208, 208, 0.747);
@@ -724,7 +731,7 @@ button {
 }
 
 .cont1 form{
-  width: 70%;
+  width:60%;
   height: 55vh;
   padding: 20px;
   background: rgba(235, 208, 208, 0.747);
@@ -752,7 +759,7 @@ button {
 
 .bttn{
   padding: 2%;
-  width: 20%;
+  width: 25%;
   background: hotpink;
   color: white;
   border:0px;
@@ -860,16 +867,18 @@ button {
 .selector ul li:hover{
     width: 110px;
 }
+.space-div{
+    display: none;
+    width: 300px;
+}
 
+.photoStyle{
+    border-radius: 20px;
+}
 
 
 /*EDIT PRODUCT*/
 
-/* .productStyle-Wrapper{
-    position: absolute;
-    top: 350px;
-    left: 80px;
-} */
 .productStyle{
     background-color: rgba(230, 197, 91, 0.486);
     position: sticky;
@@ -1020,7 +1029,6 @@ padding-top: 4px;
     font-size: 18px;
     margin-top: 10px;
     color: black;
-    /* border: 1px solid black; */
     border-radius: 5px;
     padding: 3px;
     
@@ -1034,21 +1042,17 @@ padding-top: 4px;
     margin-bottom: 5px;
 }
 
-
-
-
-    
 /*RESPONSIVITETI IPAD PRO*/
 
 /*HOME*/
-/*
+
 @media (max-width:1024px){
     #Elementet ul {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        margin-left: 17%;
+        margin-left: 10%;
     }
 
     #img {
@@ -1072,7 +1076,7 @@ padding-top: 4px;
         text-align: right;
         color: hotpink;
         position: absolute;
-        left: 53%;
+        left: 58%;
         top: 25%;
     }
 
@@ -1082,9 +1086,8 @@ padding-top: 4px;
         left: 35%;
         position: relative;
     }
-
     .single-footer {
-        width: 31%;
+        width: 33.333333%;
         float: left;
         text-align: center;
         color: #fff;
@@ -1125,20 +1128,35 @@ padding-top: 4px;
     }
 
     #f-color {
-        background-color: rgb(214, 202, 161);
         width: 100vw;
-        height: 20vh;
+        height: 635px;
     }
 
     /*ABOUT US*/
-   /*
-    element.style {
+
+    .slideshow {
         width: 100%;
-        height: 25vh;
+        height: 390px;
+        position: relative;
+        margin: auto;
+    }
+
+    .slideshow .Slides img {
+        height: 390px;
     }
 
     /*WOMEN*/
-    /*
+
+    .new-box {
+        width: 200px !important;
+        margin-left: 120px;
+    }
+    
+    .w-box p {
+        margin-left: 20%;
+        font-family: sans-serif;
+        font-size: 9px;
+    }
     .w-box img {
         width: 15vw;
         height: 10vh;
@@ -1146,10 +1164,6 @@ padding-top: 4px;
         position: relative;
     }
 
-    .w-box p {
-        margin-left: 0%;
-        font-family: sans-serif;
-    }
 
     .p-stili {
         padding: 1px;
@@ -1162,26 +1176,40 @@ padding-top: 4px;
     #boxes .semore {
         background: rgb(238, 193, 142);
         border-radius: 20px;
-        width: 35%;
+        width: 89px;
         padding: 10px;
-        margin-left: 35%;
+        margin-left: 40%;
         border: 0px;
     }
 
-    .w-box p {
-        margin-left: 0%;
-        font-family: sans-serif;
-        font-size: 9px;
+    .w-boxx img {
+        width: 15vw;
+        height: 12vh;
+        left: 55px;
+        position: relative;
     }
 
-    #f-color {
-        background-color: rgb(214, 202, 161);
-        width: 100vw;
-        height: 20vh;
+
+    .w-boxx h3 {
+        margin-left: 100px;
     }
+
+    .price {
+        margin-left: 100px;
+    }
+
+    #boxes .buynow {
+        background: rgb(238, 193, 142);
+        border-radius: 20px;
+        width: 70px;
+        margin-left: 100px;
+        border: 0px;
+        margin-top: 5px;
+    }
+
 
     /*MEN*/
-    /*
+   
     .paragrafi {
         padding: 1px;
         background-color: black;
@@ -1190,7 +1218,7 @@ padding-top: 4px;
         margin-bottom: 1px;
         text-align: center;
         width: 60%;
-        margin-left: 18%;
+        margin-left: 20%;
         font-family: sans-serif;
         font-size: 15px;
     }
@@ -1198,7 +1226,7 @@ padding-top: 4px;
     #m-foto {
         width: 65vw;
         height: 15vh;
-        margin-left: 15%;
+        margin-left: 18%;
         margin-top: 1%;
     }
 
@@ -1213,14 +1241,14 @@ padding-top: 4px;
         padding: 1px;
         background-color: black;
         color: white;
-        margin-top: 5px;
+        margin-top: 20px;
         margin-bottom: 5px;
     }
 
     .men {
         display: flex;
-        justify-content: space-between;
-        width: 90%;
+        justify-content: space-evenly;
+        /* width: 100%; */
         position: relative;
         left: 0%;
         flex-direction: row;
@@ -1247,15 +1275,23 @@ padding-top: 4px;
         justify-content: center;
         text-align: center;
         margin-top: 3%;
+        width: 240px;
+        margin-left: 50px;
+    }
+
+    .m-box p {
+        margin-left: 25%;
+        font-family: sans-serif;
     }
 
     /*KIDS*/
-/*
+
     #k-txt {
+        font-family: times;
         text-align: center;
-        font-family: Edwardian Script ITC;
-        font-size: 15px;
+        font-size: 25px;
         margin-right: 4%;
+        margin-top: 10px;
     }
 
     .k-box img {
@@ -1273,15 +1309,27 @@ padding-top: 4px;
 
     .k-teksti {
         text-align: center;
-        font-family: Edwardian Script ITC;
-        font-size: 30px;
+        font-family: times;
+        font-size: 25px;
         margin-bottom: 10px;
     }
 
     #k-foto {
-        width: 60vw;
+        width: 70vw;
         height: 20vh;
         margin-left: 2%;
+        margin-top: 10px;
+    }
+
+    .foto-txt p {
+        text-align: center;
+        font-family: times;
+        font-size: 25px;
+        background-color: rgb(219, 183, 106);
+        color: white;
+        width: 55%;
+        margin-left: 23%;
+        margin-top: 10px;
     }
 
     .foto-txt {
@@ -1289,4 +1337,50 @@ padding-top: 4px;
         font-family: Edwardian Script ITC;
         font-size: 15px;
     }
-}*/
+
+    /*DASHBOARD*/
+
+    .registerEdit{
+        margin-top: 40px;
+    }
+
+    .productStyle {
+        position: absolute;
+        top: 400px;
+        right: 115px;
+    } 
+    
+    #products table {
+        margin-left: 130px;
+        margin-right: 5px;
+    }
+
+    /*LOGIN*/
+
+
+    .cont form {
+        width: 80%;
+        height: 25vh;
+        padding: 20px;
+        background: rgba(235, 208, 208, 0.747);
+        text-align: center;
+        font-size: 15px;
+        margin-left: 15%;
+    }
+
+    .cont1 form {
+        width: 250px;
+        height: 400px;
+        padding: 20px;
+        background: rgba(235, 208, 208, 0.747);
+        text-align: center;
+        font-size: 15px;
+        margin-left: 10%;
+    }
+    .Logpic-bodyClass{
+        background-size:100vw 700px ;
+    }
+    .Regpic-bodyClass{
+        background-size:100vw 800px ;
+    }
+}

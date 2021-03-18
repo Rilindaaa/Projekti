@@ -77,7 +77,6 @@
          }    
     }
 }
-p
     class Register {
 
         private $username="";
