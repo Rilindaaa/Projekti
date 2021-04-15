@@ -20,7 +20,6 @@ function formValidations(event) {
         return false;
     }
     else if (password.length == 0) {
-        
         alert("Password can't be empty!");
         event.preventDefault();
         return false;

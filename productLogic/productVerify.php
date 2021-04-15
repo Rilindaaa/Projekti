@@ -9,7 +9,7 @@ include_once "productMapper.php";
 
     }
     else{
-        header('Location:../CONTENT/dashboard.php');
+        header('Location:../CONTENT/dashboard.php');                                        
     }
 
     class RegisterProduct {
@@ -69,3 +69,4 @@ include_once "productMapper.php";
         }
   
     }
+

@@ -248,15 +248,9 @@ li a:hover{
 
 .slideshow {
     max-width: 800vw;
-
     position: relative;
-    margin: auto;   
  }
-
- .slideshow .Slides img{
-    max-width: 500vw;
- }
-
+ 
 .mbrapa, .para {
     cursor: pointer;
     position: absolute;

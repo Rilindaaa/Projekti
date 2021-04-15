@@ -76,7 +76,7 @@
                         echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
                         echo '<h3> '.$product['emriProduktit'].'</h3>';
                         echo ' <b><p class = "price">PRICE:'.$product['cmimiProduktit'].'$</p></b>';
-                        if(isset ($_SEESION['role'])){
+                        if(isset($_SESSION['role'])){
                             
                             echo ' <a href = "../buyLogic/buyNow.php?userId='.$user['userID'].'&&IDProduktit='.$product['produktID'].'&&productName='.$product['emriProduktit'].' 
                             &&productFoto='.$product['fotoProduktit'].'&&productPrice='.$product['cmimiProduktit'].'&&productSector='.$product['sektori'].'
@@ -108,7 +108,7 @@
                         echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
                         echo '<h3> '.$product['emriProduktit'].' </h3>';
                         echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
-                        if(isset ($_SEESION['role'])){
+                        if(isset ($_SESSION['role'])){
                             
                             echo ' <a href = "../buyLogic/buyNow.php?userId='.$user['userID'].'&&IDProduktit='.$product['produktID'].'&&productName='.$product['emriProduktit'].' 
                             &&productFoto='.$product['fotoProduktit'].'&&productPrice='.$product['cmimiProduktit'].'&&productSector='.$product['sektori'].'
@@ -137,7 +137,7 @@
                         echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
                         echo '<h3> '.$product['emriProduktit'].' </h3>';
                         echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
-                        if(isset ($_SEESION['role'])){
+                        if(isset ($_SESSION['role'])){
                             
                             echo ' <a href = "../buyLogic/buyNow.php?userId='.$user['userID'].'&&IDProduktit='.$product['produktID'].'&&productName='.$product['emriProduktit'].' 
                             &&productFoto='.$product['fotoProduktit'].'&&productPrice='.$product['cmimiProduktit'].'&&productSector='.$product['sektori'].'

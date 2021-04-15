@@ -43,8 +43,6 @@
             header('Location:../CONTENT/login.php');
 
         }
-
-
     }
 
     private function verifyEmptyData($username,$password ){
@@ -154,12 +152,7 @@
             }
                 else{
                     return false;
-             }    
+         }    
     }
  }
-
-
-
-
-
 

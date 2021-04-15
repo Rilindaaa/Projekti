@@ -50,7 +50,7 @@ include_once '../databaseConnection/configD.php';
           $this-> query = 'update user set role ="1" where userID =:userId';
           $statement = $this -> connection -> prepare($this->query);
           $statement -> bindParam(':userId', $userId);
-          $statement -> execute();
+          $st11atement -> execute();
       }
 
       public function deleteUser($userId){
@@ -87,7 +87,6 @@ include_once '../databaseConnection/configD.php';
         $statement -> execute();
         $result = $statement->fetch ();
         return $result;
-
     }
 
     public function getUsernameById($userId){
@@ -101,3 +100,9 @@ include_once '../databaseConnection/configD.php';
 
 }
 
+
+
+
+
+
+   
