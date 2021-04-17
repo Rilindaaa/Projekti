@@ -31,7 +31,6 @@ class BuyProductMapper extends DbConfig{
         $this->query = 'select * from orders';
         $statement = $this->connection->prepare($this->query);
         $statement -> execute();
-
         $result = $statement->fetchAll();
         return $result;
     }

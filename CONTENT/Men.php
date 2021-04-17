@@ -54,7 +54,7 @@
                         echo '<h3> '.$product['emriProduktit'].' </h3>';
                         echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
 
-                    if(isset ($_SESSION['role'])){
+                    if(isset ($_SESSION['role']) && ($_SESSION['role'] == 0)){
                             
                         echo ' <a href = "../buyLogic/buyNow.php?userId='.$user['userID'].'&&IDProduktit='.$product['produktID'].'&&productName='.$product['emriProduktit'].' 
                         &&productFoto='.$product['fotoProduktit'].'&&productPrice='.$product['cmimiProduktit'].'&&productSector='.$product['sektori'].'
@@ -82,7 +82,7 @@
                         echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
                         echo '<h3> '.$product['emriProduktit'].' </h3>';
                         echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
-                        if(isset($_SESSION['role'])){
+                        if(isset($_SESSION['role']) && ($_SESSION['role'] == 0)){
                             
                             echo ' <a href = "../buyLogic/buyNow.php?userId='.$user['userID'].'&&IDProduktit='.$product['produktID'].'&&productName='.$product['emriProduktit'].' 
                             &&productFoto='.$product['fotoProduktit'].'&&productPrice='.$product['cmimiProduktit'].'&&productSector='.$product['sektori'].'
@@ -112,8 +112,7 @@
                         echo '<img src="../PICS/'.$product['fotoProduktit'].'">';
                         echo '<h3> '.$product['emriProduktit'].' </h3>';
                         echo ' <b><p class = "price">PRICE: '.$product['cmimiProduktit'].'$</p></b>';
-                        if(isset ($_SESSION['role'])){
-                            
+                        if(isset ($_SESSION['role']) && ($_SESSION['role'] == 0)){
                             echo ' <a href = "../buyLogic/buyNow.php?userId='.$user['userID'].'&&IDProduktit='.$product['produktID'].'&&productName='.$product['emriProduktit'].' 
                             &&productFoto='.$product['fotoProduktit'].'&&productPrice='.$product['cmimiProduktit'].'&&productSector='.$product['sektori'].'
                             &&productType='.$product['llojiProduktit'].'&& pageURL='.$_SERVER['PHP_SELF'].'"><button class="buynow"> BUY NOW </button></a>';

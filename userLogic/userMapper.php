@@ -70,14 +70,12 @@ include_once '../databaseConnection/configD.php';
     }
 
     public function updateUser($userId,$username,$email){
-
         $this->query='update user set username=:username,email=:email where userID=:userid';
         $statement = $this-> connection ->prepare($this->query);
         $statement -> bindParam(':userid', $userId);
         $statement -> bindParam(':username', $username);
         $statement -> bindParam(':email', $email);
         $statement -> execute();
-
     }
 
     public function getLogedInUserId($username){
